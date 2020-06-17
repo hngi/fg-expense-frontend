@@ -9,8 +9,12 @@
     display: flex;
     justify-content: center;
     align-items: center ;
-    height: 100vh;
+    /* height: 100vh; */
     flex-direction: column;
+    font-family: Lato;
+}
+.wrapper{
+    margin-bottom: 20px;
 }
 
 .list-container {
@@ -19,7 +23,7 @@
 }
 
 .list-container img {
-    width: 200px;
+    /* width: 200px; */
     height: 150px;
 }
 
@@ -33,7 +37,6 @@
    
 }
 
-
 .flex-right img{
     height: 149px;
     margin-bottom: 0px
@@ -41,14 +44,15 @@
 
 .list-text {
     background-color: #FFFFFF;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 25px;
     padding-left: 20px;
-    font-family: Lato;
-    font-weight: lighter;
-
+    font-weight: bold;
+    font-size: 1.2em ;
 }
-
+.list-text h5 {
+    font-weight: 800;
+}
 
 .flex-right {
     position: relative;
@@ -60,15 +64,12 @@
     left: 0px;
     background-color: #00945E;
     border-radius: 3px;
-    width: 70px;
+    border-style: none;
+    width: 100px;
     height: 25px;
     color: white;
-    font-size: 8px;
+    font-size: .9em;
     font-family: Lato;
-}
-
-.list-text h5 {
-    font-weight: 100;
 }
 
 .learn-btn:focus {
@@ -77,22 +78,24 @@
 .flex-left {
     position: relative;
 }
-.container .explore{
+.wrapper .explore{
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 100px;
-    font-size: 22px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
 }
 .learn-btn-2 {
     position: absolute;
     bottom: 3px;
     left: 0px;
     background-color: #00945E;
+    border-style: none;
     border-radius: 3px;
-    width: 70px;
+    width: 100px;
     height: 25px;
     color: white;
-    font-size: 8px;
+    font-size: .9em;
     font-family: Lato;
 }
 
