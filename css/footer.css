@@ -58,6 +58,10 @@ footer {
   text-decoration: none;
   color: #FFF;
 }
+.twitter a:hover{
+  text-decoration: none;
+  color: #d5dfdd;
+}
 
 .main-box2 {
   display: flex;
@@ -92,6 +96,7 @@ footer {
 
 .box1 a:hover, .box2 a:hover{
   color: #d5dfdd;
+  text-decoration: none;
 
 }
 

@@ -1,0 +1,39 @@
+body {
+  font-family: 'Lato', sans-serif;
+overflow-x: hidden;
+}
+.dash {
+    color: green;
+    width: 8%;
+    border-width: 5px;
+    border-color: #7aba11;    
+}
+
+.green {
+  color: green;;
+}
+
+.canvas {
+  background: rgba(0, 0, 0, 0.1); 
+}
+.mainfeature{
+  text-align: center;
+}
+.col-md-5{
+  margin-top: 85px;
+}
+.mt-2{
+  border: 1px solid red;
+  padding-right:-66px;
+}
+.img-fluid{
+  width: 70%; 
+  float: right;
+  margin-top: 55px;
+}
+.img-fluid1{
+  width: 70%; 
+  float: left;
+  margin-top: 55px;
+  margin-bottom: 55px;
+} 
