@@ -1,0 +1,23 @@
+.date {
+	color: white;
+	background-color: #00945e;
+}
+
+.pad {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer {
+	background-color: #323e48;
+	color: white;
+}
+
+.bottom-logo {
+	width: 100px;
+	height: 100px;
+}
+
+.logo2 {
+	padding-bottom: 20px;
+}
