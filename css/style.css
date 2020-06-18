@@ -2,8 +2,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
-.container{
+.containerr{
     text-align: center;
 }
 .logo1{
@@ -21,6 +22,7 @@ display: none;
 .menu{
    margin-top: 35%; 
    margin-right: 15px;
+    color: black;
 }
 header{
     display: flex;
@@ -96,6 +98,18 @@ cursor: pointer;
 }
 .home-btn:hover{
     background-color: rgb(248, 245, 245);
+}
+/* search */
+input{
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+}
+::placeholder{
+padding-left: 15px;
+}
+.fa-search{
+   margin-left: 0px;
 }
 
 @media only screen and (min-width: 650px){
