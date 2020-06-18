@@ -5,16 +5,18 @@ body{
     overflow-x: hidden;
 }
 /* banner */
+.banner-section{
+    width: 100%;
+}
 .home-banner{
     background-color: #00945E;
-    width: 100%;
     height: 30px;
     color: #fff;
     text-align: left;
     padding-left: 15px;
     padding-top: 10px;
     margin-top: 10px;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: 900;
 }
 .banner{
@@ -22,7 +24,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    /* width: 100%; */
     margin-top: -21px;
 }
 .banner h1{
@@ -52,7 +54,7 @@ body{
         font-weight: bold;
     }
     .home-banner{
-        width: 100%;
+        /* width: 100%; */
         margin-top: 10px;
         height: 60px;
         padding-top: 10px;

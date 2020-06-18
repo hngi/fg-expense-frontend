@@ -67,7 +67,12 @@ footer {
   padding-bottom: 4px;
   text-decoration: none;
   color: #EBF1EF;
-  font-size: 17px;
+  font-size: 15px;
+}
+
+.box1 a:hover, .box2 a:hover{
+  color: #d5dfdd;
+
 }
 
 .last-footer{
@@ -148,12 +153,12 @@ footer {
   .box1 h4, .box2 h4{
     color: #EBF1EF;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 18px;
   }
   
   .box1 a, .box2 a {
     color: #EBF1EF;
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .last-footer ul {
@@ -175,6 +180,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
+    
   }
 
   .box1{
@@ -192,7 +198,8 @@ footer {
   }
 
   .brand-logo img {
-    margin-top: 35px;
+    margin-top: 15px;
+    width: 50%;
     margin-left: 50px;
   }
 
@@ -224,7 +231,7 @@ footer {
   .last-footer a{
     text-decoration: none;
     color: #FFF;
-    font-size: 12px;
+    font-size: 10px;
   }
   
   .push{
