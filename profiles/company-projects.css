@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+.reponsive-div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-title {
+  background: #00945e;
+  padding: 20px 10px;
+  color: white;
+}
+
+.company {
+  padding: 10px;
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.company img {
+  width: 30%;
+}
+
+.company > div span {
+  padding: 10px;
+}
+
+.table-section {
+  padding: 8px;
+}
+
+.table-section-description {
+  padding: 20px 0px;
+}
+
+.table-section-description > p {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+.table-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.table-search {
+  margin: auto 0;
+}
+
+.table-top > div > span {
+  border: 1px solid #f2f2f2;
+  padding: 6px 10px;
+  margin: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.table-top span:hover {
+  background: grey;
+}
+
+.table-top button {
+  padding: 3px 10px;
+  background: #00945e;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer
+}
+
+input {
+  padding: 3px 10px;
+}
+
+form > div {
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  margin: auto;
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  /* border: 1px solid #ddd; */
+}
+
+th,
+td {
+  text-align: left;
+  padding: 14px;
+}
+
+th {
+  background: #00945ec7;
+  font-size: 0.8rem;
+}
+
+tr {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+.pagination {
+  float: right;
+  margin: 10px 0;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #00945e;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 480px) {
+  .reponsive-div {
+    width: 95%;
+  }
+
+  .table-top {
+    display: block;
+  }
+
+  .table-top > div {
+    width: 100%;
+  }
+}

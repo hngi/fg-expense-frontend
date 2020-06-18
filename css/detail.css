@@ -1,0 +1,44 @@
+.detail{
+    border-collapse:collapse;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(194, 187, 187);
+    border-radius: 3px;
+
+}
+th,td{
+    padding: 13px;
+    font-size: 14px;
+    font-weight:100;
+    border-spacing: 5px;
+}
+.detail tr:nth-child(even){
+    background-color: rgb(235, 229, 229);
+}
+.detail tr p{
+    width: 80px;
+    padding: 7px;
+    background-color:#009879;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    
+}
+.detail tr .red{
+    width: 80px;
+    padding: 7px;
+    background-color:#b30f0f;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    
+}
+.detail tr td:nth-child(2){
+    width: 200px;
+}
+
+th{
+    text-align: left;
+    color: #fff;
+    background-color: #009879;
+}

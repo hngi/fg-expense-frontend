@@ -27,25 +27,30 @@
 }
 
 .flex-left img {
-    height: 150px;
+    height: 200px;
+    width: 300px
    
 }
 
 .flex-right img{
-    height: 149px;
+    height: 200px;
+    width: 300px;
     margin-bottom: 0px
 }
 
 .list-text {
     background-color: #FFFFFF;
-    padding-top: 30px;
+    padding-top: 2px;
     padding-bottom: 25px;
-    padding-left: 20px;
-    font-weight: bold;
-    font-size: 1.2em ;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Lato;
+    font-weight: lighter;
+
 }
-.list-text h5 {
-    font-weight: 800;
+
+.list-text h4 {
+    margin-bottom: 20px;
 }
 
 .flex-right {
@@ -54,25 +59,30 @@
 
 .learn-btn {
     position: absolute;
-    top: 131px;
+    top: 178px;
     left: 0px;
     background-color: #00945E;
     border-radius: 3px;
-    border-style: none;
     width: 100px;
     height: 25px;
     color: white;
-    font-size: .9em;
+    font-size: 13px;
     font-family: Lato;
 }
 
 .learn-btn:focus {
     outline: none;
 }
+
 .flex-left {
     position: relative;
 }
-.wrapper .explore{
+.container-wrapper {
+    margin: 50px 0;
+
+}
+
+.container-wrapper .explore{
     text-align: center;
     margin-bottom: 20px;
     margin-top: 15px;
@@ -89,9 +99,22 @@
     width: 100px;
     height: 25px;
     color: white;
-    font-size: .9em;
+    font-size: 13px;
     font-family: Lato;
 }
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 50px 0 20px; 
+ } 
+ 
+ h2 span { 
+     background: #ebf1ef;
+     padding:0 50px; 
+
+ }
 
 @media screen and (max-width: 400px){
     .list-container {
