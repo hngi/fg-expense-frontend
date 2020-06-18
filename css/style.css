@@ -32,7 +32,7 @@ body{
     color: #fff;
     text-align: left;
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
     margin-top: 10px;
     font-size: 1em;
     font-weight: 900;
@@ -74,10 +74,10 @@ text-align: center;
 }
 .mainfeature-heading h3{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 .dash{
-    margin-top: -15px;
+    margin-top: -5px;
     color: green;
     width: 10%;
     border-width: 3px;
@@ -104,6 +104,7 @@ text-align: center;
 .green-heading{
     color: #00945E;
     font-weight: bold;
+    margin-top: 15px;
 }
 .right-content p, .left-content p{
     
@@ -112,9 +113,16 @@ text-align: center;
     margin-top: -10px;
     color: #353A45;
 }
+.first{
+    animation: Slide_right 1.5s ease-in;
+}
+.second{
+    animation: Slide_left 1.5s ease-in;
+}
 .right-content .btn, .left-content .btn{
     width: 120px;
     padding: 10px;
+margin-top: -20px;
     background: #00945E;
     color: #fff;
     border-radius: 5px;
@@ -132,7 +140,7 @@ text-align: center;
     .home-banner{
         /* width: 100%; */
         margin-top: 10px;
-        height: 60px;
+        height: 50px;
         padding-top: 10px;
         padding-left: 55px;
         font-weight: bold;
@@ -168,7 +176,7 @@ text-align: center;
         line-height: 135.5%;
     }
     .dash{
-        margin-top: -27px;
+        margin-top: -5px;
     }
     .first{
         margin-left: 180px;
@@ -192,7 +200,7 @@ text-align: center;
         margin-left: 30px;
     }
     .right-content{
-margin-left: 50px;
+        margin-left: 50px;
     }
     .left-content{
         margin-left: 100px;
