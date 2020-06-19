@@ -1,0 +1,95 @@
+.connect {
+    background-color: #005938;
+    padding: 80px;
+    margin: 0px;
+    color: #ffffff;
+    font-family: Lato;
+    text-align: center;
+}
+
+.connect-text h5 {
+    font-weight: 100;
+}
+
+.social button {
+    border-radius: 50%;
+    width: 10px;
+    height: 11px;
+    color: white;
+    background-color: #00945E ;
+    margin-left: 15px;
+    border: none;
+}
+
+
+.social button:focus {
+    outline: none
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 3px;
+    color: white
+}
+
+.social a:hover {
+    color: pink;
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px){
+    .social a{
+        font-size: 10px
+    }
+    .social a{
+        text-decoration: none;
+        font-size: 13px;
+        margin-left: 6px;
+        color: white
+    }
+
+}
+@media screen and (max-width: 300px){
+    .social a{
+        font-size: 10px
+    }
+    .social a{
+        text-decoration: none;
+        font-size: 13px;
+        margin-left: 8px;
+        color: white
+    }
+
+}
+@media screen and (max-width: 220px){
+    .connect {
+        background-color: #005938;
+        max-width: 100%;
+        margin: 0px;
+        color: #ffffff;
+        font-family: Lato;
+        text-align: center;
+        font-size: 10px
+    }
+    .social a{
+        font-size: 10px
+    }
+  
+    .social a{
+        text-decoration: none;
+        font-size: 9px;
+        margin-left: 8px;
+        color: white
+    }
+    
+    .connect-text h5 {
+        font-size: 8px;
+    }
+
+}
