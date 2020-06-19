@@ -1,152 +1,243 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-style: normal;
-  }
-  
-  .reponsive-div {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .table-section {
-    padding: 8px;
-  }
-  
-  .table-top {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px;
-  }
-  
-  .table-top > h2 {
-    color: #00945e;
-    margin: auto 0;
-    padding: 0px;
-  }
-  .table-top >h4 {
-    padding: 10px 25px;
-    text-align: right;
-  }
-  
-  .table-top button {
-    padding: 10px 30px;
-    background: #00945e;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-  } 
-  
-  .main-table {
-    border: 1px solid #f2f2f2;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-  }
-  
-  th,
-  td {
-    text-align: left;
-    padding: 14px;
-    font-size: 0.8rem;
-  }
-  
-  th {
-    background: white;
-    color: black !important;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  }
-  
-  tr > :nth-child(2) {
-    color: #00945e;
-  }
-  
-  tr {
-    border-bottom: 1px solid #f2f2f2;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .table-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10px;
-    margin: 10px 5px;
-  }
-  
-  .table-footer > span {
-    margin: auto 0;
-    color: #191e29;
-  }
-  
-  .pagination {
-    background: #f2f2f2;
-  }
-  
-  .pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    border: 1px solid #ddd;
-  }
-  
-  .pagination a.active {
-    background-color: #00945e !important;
-    color: white;
-    border: 1px solid #00945e !important;
-  }
-  
-  .pagination a:hover:not(.active) {
-    background-color: #ddd;
-  }
-  
-  .pagination a:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-  }
-  
-  .pagination a:last-child {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .reponsive-div {
-      width: 95%;
-    }
-  
-    .table-top {
-      font-size: 0.8rem;
-    }
-  
-    .table-top > div {
-      width: 100%;
-    }
-  
-    .table-footer {
-      display: block;
-    }
-  
-    th {
-      font-size: 0.8rem;
-    }
-  
-    .table-footer {
-      margin: 15px 5px 40px 5px;
-      
-    }
-  }
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.reponsive-div {
+	margin: 0 auto;
+}
+.table-section {
+	padding: 8px;
+}
+
+.table-top {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px;
+}
+
+.table-top > h2 {
+	color: #00945e;
+	margin: auto 0;
+	padding: 0px;
+}
+.table-top > h4 {
+	padding: 10px 25px;
+	text-align: right;
+}
+
+.table-top button {
+	padding: 10px 30px;
+	background: #00945e;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.main-table {
+	border: 1px solid #f2f2f2;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 14px;
+	font-size: 0.9rem;
+}
+
+th {
+	background: white;
+	color: black !important;
+	font-size: 1rem;
+	font-weight: 600;
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+tr > :nth-child(2) {
+	color: #00945e;
+}
+
+tr {
+	border-bottom: 1px solid #f2f2f2;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.table-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px;
+	margin: 10px 5px;
+}
+
+.table-footer > span {
+	margin: auto 0;
+	color: #191e29;
+}
+
+.pagination {
+	background: #f2f2f2;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: 1px solid #ddd;
+}
+
+.pagination a.active {
+	background-color: #00945e !important;
+	color: white;
+	border: 1px solid #00945e !important;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+.pagination a:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+	.reponsive-div {
+		width: 95%;
+	}
+
+	.table-top {
+		font-size: 0.8rem;
+	}
+
+	.table-top > div {
+		width: 100%;
+	}
+
+	.table-footer {
+		display: block;
+	}
+
+	th {
+		font-size: 0.8rem;
+	}
+
+	.table-footer {
+		margin: 15px 5px 40px 5px;
+	}
+}
+
+/* CHART STYLE */
+
+.roundtable {
+	background-image: url(./assets/images/2.png);
+	/* position: absolute; */
+	width: 1400px;
+	height: 300px;
+	left: 31px;
+	top: 134px;
+	padding: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+.outsidegraph {
+	margin-left: 70px;
+	margin-bottom: 20px;
+}
+.graph {
+	width: fit-content;
+	padding-top: 20px;
+	background-color: white;
+	position: relative;
+}
+
+.graph .date {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+.graph .amount {
+	position: absolute;
+	top: 260px;
+	left: -115px;
+	font-weight: bold;
+	font-size: 0.8rem;
+	transform: rotate(-90deg);
+}
+.graphbody svg {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.graphbody {
+	position: relative;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	/* padding: 0 10px; */
+}
+
+.graphlabel {
+	display: flex;
+	flex-direction: column;
+	background-color: #005938;
+	width: fit-content;
+	border-radius: 5px;
+	color: white;
+	padding: 8px;
+	position: relative;
+	left: 240px;
+}
+
+.graphlines {
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	right: 10px;
+}
+.graphlines .numbers {
+	position: absolute;
+	top: -10px;
+	left: -35px;
+}
+.graphlines .numbers div {
+	margin-bottom: 10.5px;
+}
+.graphline {
+	width: 100%;
+	height: 0.1px;
+	background-color: #d7d7d7;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 411px) {
+	.graphbody svg {
+		width: 270px;
+	}
+	.graphlabel {
+		left: 110px;
+		top: 90px;
+	}
+}
