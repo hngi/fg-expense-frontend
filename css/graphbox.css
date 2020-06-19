@@ -6,6 +6,10 @@
   right: -300px;
 }
 
+.cont tr td:nth-child(2) {
+  width: 10px;
+}
+
 .black {
   background-color: black;
   width: 25px;

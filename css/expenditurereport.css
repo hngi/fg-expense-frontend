@@ -234,13 +234,33 @@
   left: -35px;
 }
 .graphlines .numbers div {
-  margin-bottom: 10.5px;
+  margin-bottom: 5.5px;
 }
 .graphline {
   width: 100%;
   height: 0.1px;
   background-color: #d7d7d7;
   margin-bottom: 30px;
+}
+
+.colors {
+  display: flex;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+}
+.colors > span {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.colors .color {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 411px) {
@@ -250,5 +270,13 @@
   .graphlabel {
     left: 110px;
     top: 90px;
+  }
+  .colors {
+    left: calc(50% + 40px);
+  }
+  .colors .color {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
   }
 }
