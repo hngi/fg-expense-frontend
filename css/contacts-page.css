@@ -1,0 +1,90 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    /* font-size: 25px; */
+    /* padding: .5rem 3rem; */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-section h2 {
+    margin: 0;
+    padding: 0.6rem;
+    padding-left: 4rem;
+    background: #00945E;
+    color: white;
+  }
+  
+  .first {
+    background: url("../img/Julius-Berger\ 1\ \(1\).png");
+    height: 60vh;
+    padding: 7rem;
+  }
+  
+  .first h2, .first p {
+    text-align: center;
+    color: white;
+  }
+  .second{
+    background: rgba(31, 36, 48, 0.8);
+    color: white;
+    margin: 4rem;
+    padding-bottom: 2rem;
+  }
+  .container{
+      display: flex;
+      justify-content: space-around;
+  }
+  .second h2{
+      text-align: center;
+      margin: 2rem 0;
+      padding-top: 1rem;
+  }
+  .details{
+        width: 40%; 
+  }
+  .details img{
+      display: inline-block;
+      margin: 1rem 0;
+      margin-bottom: 0;
+   
+  }
+span{
+    font-size: 13px;
+    margin-left: 1rem;
+}
+
+  form{
+      width: 40%;
+  }
+
+  input{
+      display: block;
+      width: 90%;
+      height: 40px;
+      margin: 2rem 0;
+      border-radius: 5px;
+      border-style: none;
+  }
+  #message{
+      height: 150px;
+  }
+
+  button{
+      width: 90%;
+      padding: .5rem 1rem;
+      background: #00945E;
+      border-radius: 5px;
+      border-style: none;
+      color: white;
+  }
+
+  a{
+   text-decoration: none;
+   margin: 4rem;
+   color: black;
+  }
