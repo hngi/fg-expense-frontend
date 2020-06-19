@@ -81,7 +81,7 @@ text-align: center;
     color: green;
     width: 10%;
     border-width: 3px;
-    border-color: #7aba11;    
+    border-color: #00945E;    
 }
 .mainfeature-item{
     width: 90%;
@@ -90,16 +90,22 @@ text-align: center;
     flex-direction: column ;
     margin-top: 20px;
 }
-.left-image, .right-image{
+.left-image{
     width: 100%;
-    height: 240px;
-    background: url(../img/exec.jpeg);
+    height: 220px;
+    background: url(../img/Rectangle\ 331.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;  
 }
 .right-image{
+    width: 100%;
+    height: 240px;
     margin-top: 20px;
+    background: url(../img/exec.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 .green-heading{
     color: #00945E;
