@@ -1,0 +1,17 @@
+.graph {
+  position: relative;
+  margin-top: 70px;
+}
+
+.graphlabel {
+  display: flex;
+  flex-direction: column;
+  background-color: #005938;
+  width: fit-content;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  position: absolute;
+  left: 218px;
+  top: -62px;
+}
