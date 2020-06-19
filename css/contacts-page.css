@@ -2,8 +2,6 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    /* font-size: 25px; */
-    /* padding: .5rem 3rem; */
   }
   
   body {
@@ -62,7 +60,7 @@ span{
       width: 40%;
   }
 
-  input{
+  input, textarea{
       display: block;
       width: 90%;
       height: 40px;
@@ -70,8 +68,10 @@ span{
       border-radius: 5px;
       border-style: none;
   }
-  #message{
+  
+  textarea{
       height: 150px;
+      padding: 20px 10px;
   }
 
   button{
@@ -86,5 +86,57 @@ span{
   a{
    text-decoration: none;
    margin: 4rem;
+    padding: 5px 8px;
    color: black;
   }
+
+  @media (max-width: 800px) {
+    .second .container {
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .second .container .details {
+  width: 100%;
+  margin-bottom: 20px;
+    }
+
+    .second .container form {
+      width: 100%;
+    }
+
+    .second .container form input, textarea{
+      width: 100%;
+      padding: 20px 10px;
+    }
+
+     .second .container form button {
+        width: 100%;
+     }
+  }
+
+    @media (max-width: 500px) { 
+     .second {
+       width: 90%; 
+       margin: auto;
+       margin-top: 4rem;
+       margin-bottom: 4rem;
+     }
+
+     .first {
+       height: 100%;
+       padding: 10px;
+       padding-top: 50px;
+       padding-bottom: 50px;
+     }
+
+      a {
+       display: inline-block;
+       width: 100%;
+       margin: 0;
+       text-align: center;
+       padding: 5px 8px;
+     }
+    }
