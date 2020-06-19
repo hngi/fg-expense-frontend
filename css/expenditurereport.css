@@ -263,6 +263,107 @@
   margin-right: 20px;
 }
 
+.comments {
+  background-color: rgba(0, 148, 94, 0.28);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.comments img {
+  height: fit-content;
+}
+
+.comment img {
+  margin-right: 20px;
+}
+.comment {
+  box-sizing: border-box;
+  display: flex;
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  border: #00945e solid 1px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.subcomment {
+  box-sizing: border-box;
+  display: flex;
+  background-color: white;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.topright {
+  /* position: relative; */
+  color: #005938;
+  font-weight: bold;
+}
+
+.topright :nth-child(2) {
+  font-size: 0.6rem;
+  margin-left: 5px;
+}
+
+.topright svg {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.react > span {
+  margin-right: 10px;
+}
+
+.flap {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  color: #323e48;
+  border: #005d3b 1px solid;
+  border-radius: 5px;
+  background-color: white;
+}
+.flap div {
+  padding: 5px 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.write {
+  width: 65%;
+  position: relative;
+}
+.write input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.write svg {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.write svg:nth-child(2) {
+  right: 55px;
+}
+.write svg:nth-child(3) {
+  right: 20px;
+}
+
 @media only screen and (max-width: 411px) {
   .graphbody svg {
     width: 270px;
@@ -278,5 +379,11 @@
     width: 25px;
     height: 25px;
     margin-right: 5px;
+  }
+  .comment {
+    width: 95%;
+  }
+  .subcomment {
+    margin-left: -70px;
   }
 }
