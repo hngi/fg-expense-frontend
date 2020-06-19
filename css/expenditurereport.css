@@ -27,7 +27,8 @@
   text-align: right;
 }
 
-.table-top button {
+.table-top button,
+.graph > button {
   padding: 10px 30px;
   background: #00945e;
   color: white;
@@ -43,20 +44,20 @@
   margin-bottom: 20px;
 }
 
-table {
+.tablet {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-th,
-td {
+.tablettr th,
+.tablettr td {
   text-align: left;
   padding: 14px;
   font-size: 0.9rem;
 }
 
-th {
+.tablettr th {
   background: white;
   color: black !important;
   font-size: 1rem;
@@ -65,15 +66,15 @@ th {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-tr > :nth-child(2) {
+.tablettr > :nth-child(2) {
   color: #00945e;
 }
 
-tr {
+.tablettr {
   border-bottom: 1px solid #f2f2f2;
 }
 
-tr:nth-child(even) {
+.tablettr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
@@ -138,7 +139,7 @@ tr:nth-child(even) {
     display: block;
   }
 
-  th {
+  .tablettr th {
     font-size: 0.8rem;
   }
 
@@ -165,12 +166,22 @@ tr:nth-child(even) {
 .outsidegraph {
   margin-left: 70px;
   margin-bottom: 20px;
+  position: relative;
+}
+.outsidegraph > span {
+  font-weight: bolder;
 }
 .graph {
   width: fit-content;
   padding-top: 20px;
   background-color: white;
   position: relative;
+}
+
+.graph > button {
+  position: absolute;
+  right: -120px;
+  top: 10px;
 }
 
 .graph .date {
