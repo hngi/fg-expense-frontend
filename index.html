@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact-home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <title>ExpenseNg</title>
 </head>
@@ -63,6 +68,205 @@
     </div>
     </div>
 
+<!-- Daily expenditure -->
+<main class="container">
+    <!-- Chart Header Row -->
+    <div class="row justify-content-center align-items-center" style="margin-top: 30px;">
+        <div class="col-md-10 text-center font-weight-normal">
+            <h3 id="sub-section-header">
+                Daily Expenditure in Real Time
+            </h3>
+        </div>
+    </div>
+    <!-- Toggle Button Row -->
+    <div class="row" style="margin: 20px auto;">
+        <div class="col-md-3 offset-md-8">
+            <div class="row align-items-center">
+                <div class="col-md-4 offset-md-4 text-right">
+                    <a href="" type="button" class="btn btn-md">
+                        <i class="fas fa-th fa-2x" style="color: #00945E;"></i>
+                    </a>
+                </div>
+                <div class="col-md-4 text-right">
+                    <a href="" type="button" class="btn btn-md">
+                        <i class="fas fa-list fa-2x" style="color: #00945E;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Date & Filter Row -->
+    <div class="row" style="margin: 20px auto;">
+        <div class="col-md-3 offset-md-6">
+            <div class="row align-items-center">
+                <!-- Report Date -->
+                <div class="col-md-8 text-right">
+                    20th May, 2020
+                </div>
+                <!-- Filter Button -->
+                <div class="col-md-4" style="padding: 0; background: #00945E; color: #FFFFFF;">
+                    <button href="" type="button" class="btn btn-md" style="background: #00945E; color: #FFFFFF;">
+                        Filter<i class="fas fa-filter" style="margin-left: 10px;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chart Canvas Row -->
+    <div class="row justify-content-center align-items-center" style="margin-bottom: 30px;">
+        <div class="col-md-7">
+            <canvas id="expenditure-chart"></canvas>
+        </div> 
+        <div class="col-md-1 h-100">
+
+        </div>
+        <div class="col-md-2">
+            <div class="row">
+                <div class="col-md-6" style="padding-left: 0;">
+                    <h5 id="sub-section-header">
+                        Key
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="list-unstyled align-items-center">
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #1F2430;" />
+                        </svg> 
+                          January
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #6765EC;" />
+                        </svg> 
+                        February
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #42E8E0;" />
+                        </svg> 
+                        March
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #2196C4;" />
+                        </svg> 
+                        April
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #005D3B;" />
+                        </svg> 
+                        May
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #004583;" />
+                        </svg> 
+                        June
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #FF0000;" />
+                        </svg> 
+                        July
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #BC0A0A;" />
+                        </svg> 
+                        August
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #9EFF00;" />
+                        </svg> 
+                        September
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #423E85;" />
+                        </svg> 
+                        October
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #71CACE;" />
+                        </svg> 
+                        November
+                    </li>
+                    <li>
+                        <svg width="20" height="20">
+                            <rect x="0" y="0" width="25" height="25"
+                            style="fill: #A4A4A4;" />
+                        </svg> 
+                        December
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+        <!-- BEGINNING OF OUR MAIN FEATURE -->
+<div class="mainfeature-section">
+    <div class="mainfeature-heading">
+        <h3 >Our Main Features</h3>
+        <hr class="dash">
+    </div>
+<div class="mainfeature-item first">
+    <div class="left-image"></div>
+
+    <div class="right-content">
+        <h3 class="green-heading">Ministry Report</h3>
+        <p class="mb-5">When validation fails the api will return a 422 code and the errors object
+            containing an array with the field name as the key and the error message as the
+            value.Nested fields use dot notation as shown in the example</p>
+        <button class="btn">See Details</button>
+    </div>
+</div>
+
+<div class="mainfeature-item second">
+    <div class="left-content">
+        <h3 class="green-heading">Company Report</h3>
+        <p class="mb-5">When validation fails the api will return a 422 code and the errors object
+            containing an array with the field name as the key and the error message as the
+            value.Nested fields use dot notation as shown in the example</p>
+        <button class="btn">See Details</button>
+    </div>
+    <div class="right-image"></div>
+</div>
+</div>
+<!-- END OF MAIN FEATURE LIST -->
+       <!-- Connect -->
+       <div class="connect">
+        <div class ="connect-text">
+          <h2>Connect With Us</h2>
+          <h5>Connect with us via mail. We are always available.</h5>
+          <h5>Describe the issue with your Email address.</h5>
+        </div>
+        <div class = "social">
+          <div><button></button><a href= "#">Social link 1</a></div>
+          <div><button></button><a href= "#">Social link 2</a></div>
+          <div><button></button><a href= "#">Social link 3</a></div>
+          <div><button></button><a href= "#">Social link 4</a></div>
+        </div>
+    </div>
+
+
 <!-- footer -->
     <footer>
         <div class="main-footer-wrapper">
@@ -102,7 +306,15 @@
         </div>
     </footer>
     <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/chart-section.js"></script>
+    <script src="https://kit.fontawesome.com/ae3427d2c7.js" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <!-- custom script -->
     <script src="js/main.js"></script>
 </body>

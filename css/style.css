@@ -32,10 +32,11 @@ body{
     color: #fff;
     text-align: left;
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
     margin-top: 10px;
     font-size: 1em;
     font-weight: 900;
+    font-family: 'Lato', sans-serif;
     
 }
 .banner{
@@ -53,7 +54,9 @@ body{
     padding-top: 25px;
     padding-left: 15px;
     padding-right: 20px;
+    margin-top: 21px;
     color: white;
+    font-family: 'Lato', sans-serif;
 }
 .banner p{
     font-size: 12px;
@@ -62,6 +65,68 @@ body{
     padding-right: 30px;
     padding-left: 15px;
     padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+}
+/* MAIN FEATURE  */
+.mainfeature-section{
+margin-bottom: 20px;
+text-align: center;
+}
+.mainfeature-heading h3{
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.dash{
+    margin-top: -5px;
+    color: green;
+    width: 10%;
+    border-width: 3px;
+    border-color: #7aba11;    
+}
+.mainfeature-item{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column ;
+    margin-top: 20px;
+}
+.left-image, .right-image{
+    width: 100%;
+    height: 240px;
+    background: url(../img/exec.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.right-image{
+    margin-top: 20px;
+}
+.green-heading{
+    color: #00945E;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.right-content p, .left-content p{
+    
+    padding: 12px;
+    font-size: .9em;
+    margin-top: -10px;
+    color: #353A45;
+}
+.first{
+    animation: Slide_right 1.5s ease-in;
+}
+.second{
+    animation: Slide_left 1.5s ease-in;
+}
+.right-content .btn, .left-content .btn{
+    width: 120px;
+    padding: 10px;
+margin-top: -20px;
+    background: #00945E;
+    color: #fff;
+    border-radius: 5px;
+    border-style: none;
 }
 
 @media only screen and (min-width: 650px){
@@ -75,11 +140,11 @@ body{
     .home-banner{
         /* width: 100%; */
         margin-top: 10px;
-        height: 60px;
+        height: 50px;
         padding-top: 10px;
         padding-left: 55px;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.2em;
         line-height: 34px;
     }
     .banner{
@@ -91,8 +156,9 @@ body{
        padding-top: 70px;
        font-size: 56px;
        line-height: 74px;
-        font-weight: bolder;
-        margin-left: 30px;
+       font-weight: bolder;
+       margin-left: 30px;
+        margin-top: 45px;
     }
     .banner p{
         width: 40%;
@@ -100,5 +166,63 @@ body{
         font-weight: 600;
         font-size: 1em;
         line-height: 29px;
+    }
+    .mainfeature-item{
+        flex-direction: row;
+        width: 70%;
+    }
+    .mainfeature-heading h3{
+        font-size: 36px;
+        line-height: 135.5%;
+    }
+    .dash{
+        margin-top: -5px;
+    }
+    .first{
+        margin-left: 180px;
+        margin-top: 50px;
+        animation: Slide_right 1.3s ease-in;
+    }
+    .second{
+        margin-right: 180px;
+        margin-top: 20px;
+        animation: Slide_left 1.3s ease-in;
+}
+    .left-image, .right-image{
+        height: 350px;
+        margin-right: 5px;
+        width: 50%;
+    }
+    .right-content, .left-content{
+        width: 50%;
+        margin-top: 20px;
+        text-align: left;
+        margin-left: 30px;
+    }
+    .right-content{
+        margin-left: 50px;
+    }
+    .left-content{
+        margin-left: 100px;
+    }
+    .green-heading{
+        font-size: 1.5em;
+        line-height: 135.5%;
+    }
+    .right-content p, .left-content p{
+        font-size: 1.1em;
+        line-height: 152%;
+        width: 80%;
+    }
+    .right-content p{
+        padding-left: 1px;
+    }
+    .left-content p{
+        padding-left: 1px;
+    
+    }
+    .right-content .btn, .left-content .btn{
+        padding: 15px;
+        width: 140px;
     }
 }
