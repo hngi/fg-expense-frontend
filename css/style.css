@@ -1,4 +1,4 @@
-@keyframes Slide_right{
+/* @keyframes Slide_right{
     0%{
         transform: translateX(-400px);
     }
@@ -13,7 +13,7 @@
     100%{
         transform: translateX(0);
     }
-}
+} */
 
 body{
     margin: 0;
@@ -128,7 +128,7 @@ text-align: center;
 .right-content .btn, .left-content .btn{
     width: 120px;
     padding: 10px;
-margin-top: -20px;
+    margin-top: -20px;
     background: #00945E;
     color: #fff;
     border-radius: 5px;
@@ -150,7 +150,8 @@ margin-top: -20px;
         padding-top: 10px;
         padding-left: 55px;
         font-weight: bold;
-        font-size: 1.2em;
+        font-weight: bold;
+        font-size: 28px;
         line-height: 34px;
     }
     .banner{
@@ -178,11 +179,17 @@ margin-top: -20px;
         width: 70%;
     }
     .mainfeature-heading h3{
+        font-weight: bold;
         font-size: 36px;
         line-height: 135.5%;
     }
     .dash{
         margin-top: -5px;
+    }
+    .green-heading{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 135.5%;
     }
     .first{
         margin-left: 180px;
@@ -193,7 +200,7 @@ margin-top: -20px;
         margin-right: 180px;
         margin-top: 20px;
         animation: Slide_left 1.3s ease-in;
-}
+    }
     .left-image, .right-image{
         height: 350px;
         margin-right: 5px;
@@ -204,6 +211,8 @@ margin-top: -20px;
         margin-top: 20px;
         text-align: left;
         margin-left: 30px;
+        font-size: 16px;
+        line-height: 152%;
     }
     .right-content{
         margin-left: 50px;
@@ -228,7 +237,10 @@ margin-top: -20px;
     
     }
     .right-content .btn, .left-content .btn{
-        padding: 15px;
-        width: 140px;
+        padding: 10px;
+        width: 150px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 29px;
     }
 }
