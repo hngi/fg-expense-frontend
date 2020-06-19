@@ -1,3 +1,20 @@
+@keyframes Slide_right{
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes Slide_left{
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,24 +22,29 @@ body{
     overflow-x: hidden;
 }
 /* banner */
+.banner-section{
+    width: 100%;
+    animation: Slide_right 1.1s ease-in;
+}
 .home-banner{
     background-color: #00945E;
-    width: 100%;
-    height: 30px;
+    height: 40px;
     color: #fff;
     text-align: left;
     padding-left: 15px;
     padding-top: 10px;
     margin-top: 10px;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    
 }
 .banner{
     background: linear-gradient( rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.623) ), url(../img/images28.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    /* width: 100%; */
     margin-top: -21px;
 }
 .banner h1{
@@ -32,7 +54,9 @@ body{
     padding-top: 25px;
     padding-left: 15px;
     padding-right: 20px;
+    margin-top: 21px;
     color: white;
+    font-family: 'Lato', sans-serif;
 }
 .banner p{
     font-size: 12px;
@@ -41,6 +65,7 @@ body{
     padding-right: 30px;
     padding-left: 15px;
     padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
 }
 
 @media only screen and (min-width: 650px){
@@ -52,13 +77,13 @@ body{
         font-weight: bold;
     }
     .home-banner{
-        width: 100%;
+        /* width: 100%; */
         margin-top: 10px;
         height: 60px;
         padding-top: 10px;
         padding-left: 55px;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.2em;
         line-height: 34px;
     }
     .banner{
@@ -70,8 +95,9 @@ body{
        padding-top: 70px;
        font-size: 56px;
        line-height: 74px;
-        font-weight: bolder;
-        margin-left: 30px;
+       font-weight: bolder;
+       margin-left: 30px;
+margin-top: 45px;
     }
     .banner p{
         width: 40%;

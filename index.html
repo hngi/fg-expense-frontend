@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <title>ExpenseNg</title>
 </head>
 <body> 
@@ -53,6 +56,7 @@
                 </header>
     
         <!-- banner -->
+        <div class="banner-section">
         <div class="home-banner">Home</div>
         <div class="banner">
             <h1>Track Government <br>
@@ -61,24 +65,72 @@
                 Learn more on how this money was spent with tools to help you navigate spending from top to bottom.</p>
         </div>
     </div>
+    </div>
 
+    <!-- BEGINNING OF OUR MAIN FEATURE -->
+<div class="mainfeature">
+    <div class="canvas">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center mt-3">Our Main Features</h3>
+                <hr class="dash">
+            </div>
 
-    <!-- Connect -->
-    <div class="connect">
-        <div class ="connect-text">
-          <h1>Connect With Us</h1>
-          <h5>Connect with us via mail. We are always available.</h5>
-          <h5>Describe the issue with your Email address.</h5>
         </div>
-        <div class = "social">
-          <div><button></button><a href= "#">Social link 1</a></div>
-          <div><button></button><a href= "#">Social link 2</a></div>
-          <div><button></button><a href= "#">Social link 3</a></div>
-          <div><button></button><a href= "#">Social link 4</a></div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/exec.jpeg" alt="exec" class="img-fluid pl-5" width="500px " style="float: right;">
+            </div>
+
+            <div class="col-md-6 mt-2">
+                <h3 class="green pr-5">Ministry Report</h3>
+                <p class="mb-5">When validation fails the api will return a 422 <br> code and the errors object
+                    containing an <br> array with the field name as the key and the <br> error message as the
+                    value.Nested fields use <br> dot notation as shown in the example</p>
+                <button class="btn btn-success btn-lg text-white green m-3 ">See Details</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-5 offset-1">
+                <h3 class="green pl-5 text-center">Company Report</h3>
+                <p class="mb-5 text-center">When validation fails the api will return a 422 <br> code and the errors
+                    object containing an <br> array with the field name as the key and the <br> error message as the
+                    value.Nested fields use <br> dot notation as shown in the example</p>
+                <div class="text-center">
+                    <button class="btn btn-success btn-lg mb-3">See Details</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="img/exec.jpeg" alt="exec" class="img-fluid  pr-5 " width="500px" style="float: left;">
+            </div>
         </div>
     </div>
 
+</div>
 
+<!-- END OF MAIN FEATURE LIST -->
+
+ <!-- Connect -->
+ <div class="connect">
+    <div class ="connect-text">
+      <h1>Connect With Us</h1>
+      <h5>Connect with us via mail. We are always available.</h5>
+      <h5>Describe the issue with your Email address.</h5>
+    </div>
+    <div class = "social">
+      <div><button></button><a href= "#">Social link 1</a></div>
+      <div><button></button><a href= "#">Social link 2</a></div>
+      <div><button></button><a href= "#">Social link 3</a></div>
+      <div><button></button><a href= "#">Social link 4</a></div>
+    </div>
+</div>
+
+
+
+
+<!-- footer -->
     <footer>
         <div class="main-footer-wrapper">
             <div class="main-box1">
@@ -105,8 +157,7 @@
                 </div>
             </div>
         </div>
-
-     <div class="last-footer">
+        <div class="last-footer">
             <ul>
                 <li><a href="#">Accessibility |</a></li>
                 <li><a href="#">&nbspPrivacy Policy |</a></li>
@@ -115,10 +166,20 @@
                     <a href="#">&#169; 2020 EXPENSENG.com</a>
                 </li>
             </ul>
-     </div>
+        </div>
     </footer>
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <!-- custom script -->
     <script src="js/main.js"></script>
 </body>
