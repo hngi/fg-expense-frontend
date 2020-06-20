@@ -6,45 +6,27 @@
     font-family: Lato;
     text-align: center;
 }
+
 .connect-text h2{
     font-size: 1.8em;
 }
+
 .connect-text h5 {
     font-weight: 100;
     font-size: .9em;
 }
 
 .social button {
-    border-radius: 50%;
-    width: 10px;
-    height: 11px;
-    color: white;
-    background-color: #00945E ;
-    margin-left: 15px;
+    color: #00945E;
+    background-color: white;
+    padding: 8px;
     border: none;
-}
+    margin-top: 35px;
+    border-radius: 5px;
 
 
-.social button:focus {
-    outline: none
 }
 
-.social a{
-    text-decoration: none;
-    font-size: 13px;
-    margin-left: 3px;
-    color: white
-}
-
-.social a:hover {
-    color: pink;
-    text-decoration: none;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
-}
 
 @media screen and (max-width: 500px){
     .social a{
