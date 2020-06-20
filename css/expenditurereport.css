@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+.container p{
+	text-align: center;
+}
+
 .reponsive-div {
 	margin: 0 auto;
 }
@@ -250,29 +254,7 @@ tr:nth-child(even) {
 	background-size: cover;
 }
 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
-
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-}
-
-p{
-    padding: 0;
-    margin: 0;
-}
-
-a,
-a:hover,
-a:active{
-	text-decoration: none !important;
-	color: #ffffff !important;
-}
+/* Pop up for projest summary */
 
 .section-wrapper{
     background-color: rgba(5, 2, 2, 0.9);
@@ -347,7 +329,9 @@ a:active{
 
 .btn a{
     color: #ffffff;
-    font-size: .8rem;
+	font-size: .8rem;
+	text-decoration: none !important;
+	color: #ffffff !important;
 }
 
 .btn img{
