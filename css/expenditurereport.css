@@ -21,12 +21,12 @@
 	margin: 15px;
 }
 
-.table-top > h2 {
+.table-top > h3 {
 	color: #00945e;
 	margin: auto 0;
 	padding: 0px;
 }
-.table-top > h4 {
+.table-top > h5 {
 	padding: 10px 25px;
 	text-align: right;
 }
@@ -101,7 +101,7 @@ tr:nth-child(even) {
 	color: black;
 	float: left;
 	padding: 8px 16px;
-	text-decoration: none;
+	text-decoration: none !important;
 	border: 1px solid #ddd;
 }
 
@@ -112,7 +112,7 @@ tr:nth-child(even) {
 }
 
 .pagination a:hover:not(.active) {
-	background-color: #ddd;
+	background-color: #ddd !important;
 }
 
 .pagination a:first-child {
@@ -129,9 +129,23 @@ tr:nth-child(even) {
 	.reponsive-div {
 		width: 95%;
 	}
-
-	.table-top {
-		font-size: 0.8rem;
+	
+	.table-top >h3 {
+		font-size: 18px;
+		color: #00945e;
+	}
+	.table-top > h5{
+		font-size: 14px;
+		text-align: right;
+	}
+	.table-top button{
+		padding: 10px 15px;
+		background: #00945e;
+		color: white;
+		border-radius: 5px;
+		cursor: pointer;
+		outline: none;
+		border: none;
 	}
 
 	.table-top > div {
