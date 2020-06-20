@@ -78,34 +78,33 @@ let expenditureChart = new Chart(chartCanvas, {type, data, options});//Draw the 
 *
 */
 
-const dataPresentation = document.getElementById('data-presentation');//Get data presentation div
+const chart = document.getElementById('chart');//Get chart
+const table = document.getElementById('table');//Get table
 const chartButton = document.getElementById('chart-btn');//Get chart button
 const tableButton = document.getElementById('table-btn');//Get table button
-
 const chartIcon = chartButton.firstElementChild;//Get chart icon
 const tableIcon = tableButton.firstElementChild;//Get chart icon
 
-chartIcon.style.color = "#00945E";//Set chart icon color - active
-tableIcon.style.color = "#757575";//Set table icon color - inactive
+function setDefaults() {
+    chartIcon.style.color = "#00945E";//Set chart icon color - active
+    tableIcon.style.color = "#757575";//Set table icon color - inactive
+    table.style.display = "none";//Default - do not display table 
+    chart.style.display = "";//Default - display chart
+}
 
-function toggleDataPresentation() {
-    if(event.srcElement.id == chartButton){
-        console.log("Chart Icon Present");
+function toggleDataPresentation(btn_id) {
+    if(btn_id == chartButton.id){
         chartIcon.style.color = "#00945E";
         tableIcon.style.color = "#757575";
-        //dataPresentation.display = ""
+        table.style.display = "none";
+        chart.style.display = "";
     }
-    else if(event.srcElement.id == tableButton){
-        console.log("Table Icon Present");
+    else if(btn_id == tableButton.id){
         chartIcon.style.color = "#757575";
         tableIcon.style.color = "#00945E";
-        //dataPresentation.display = ""
+        chart.style.display = "none";
+        table.style.display = "";
     }
 };
-
-/*
-chartButton.addEventListener("click", toggleDataPresentation);//Set chart button click listener
-tableButton.addEventListener("click", toggleDataPresentation);//Set table button click listener
-*/
 
 
