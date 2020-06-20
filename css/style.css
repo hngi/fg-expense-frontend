@@ -167,17 +167,18 @@ text-align: center;
     .banner h1{
        padding-top: 70px;
        font-size: 56px;
-       line-height: 74px;
+        line-height: 74px;
        font-weight: bolder;
        margin-left: 30px;
         margin-top: 45px;
     }
     .banner p{
-        width: 40%;
+        width: 57%;
         padding-left: 50px;
-        font-weight: 600;
-        font-size: 1em;
+        font-weight: normal;
+        font-size: 24px;
         line-height: 29px;
+        padding-top: 10px;
     }
     .mainfeature-item{
         flex-direction: row;
@@ -211,6 +212,9 @@ text-align: center;
         margin-right: 5px;
         width: 50%;
     }
+    .right-image{
+margin-left: 30px;
+    }
     .right-content, .left-content{
         width: 50%;
         margin-top: 20px;
@@ -230,9 +234,9 @@ text-align: center;
         line-height: 135.5%;
     }
     .right-content p, .left-content p{
-        font-size: 1.1em;
+        font-size: 20px;
         line-height: 152%;
-        width: 80%;
+        width: 100%;
     }
     .right-content p{
         padding-left: 1px;
