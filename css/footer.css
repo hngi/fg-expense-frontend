@@ -54,6 +54,7 @@ footer {
   margin-left: 60px;
 }
 
+/* remove position: relative if link doesn't align with logo*/
 .twitter a{
   position: relative;
   top: 35px;
