@@ -37,7 +37,7 @@
 	color: white;
 	border-radius: 5px;
 	cursor: pointer;
-	outline: none;
+	outline: none !important;
 	border: none;
 }
 
@@ -144,7 +144,7 @@ tr:nth-child(even) {
 		color: white;
 		border-radius: 5px;
 		cursor: pointer;
-		outline: none;
+		outline: none !important;
 		border: none;
 	}
 
@@ -364,6 +364,114 @@ tr:nth-child(even) {
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
+
+/*------------------Filter POPUP------*/
+.center {
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .clearfix:after {
+	clear: both;
+	content: '';
+	display: table;
+  }
+  
+  #filter-screen{
+	display: none;
+	position: fixed;
+	top:0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .filter-popup{
+	margin-top: 55px;
+	padding: 0 8px;
+	vertical-align: middle;
+	width: 280px;
+	height: 434px;
+	background-color: white;
+	border-radius: 4px;
+  }
+  .filter-header{
+	padding-top: 16px;
+	padding-bottom: 6px;
+	color: #00945e;
+	border-bottom: 1px solid #dfdfdf;
+	font-size: 14px;
+  }
+  .filter-subtext{
+	padding-top: 14px;
+	padding-bottom: 12px;
+	font-size: 14px;
+  }
+  .date-select{
+	height: 36px;
+	width: 100px;
+	background-color: #ebf1ef;
+	border: 1px solid #4acea0;
+	cursor: pointer;
+	border-radius: 3px;
+  }
+  .view-choice{
+	float: left;
+	height: 36px;
+	width: 60px;
+	background-color: #ebf1ef;
+	border: 1px solid #4acea0;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-right: 40px;
+	font-size: 13px;
+	outline: none !important;
+  }
+  .view-choice:hover{
+	background-color: #00945e;
+  }
+  
+  .view-choice:last-child{
+	margin-right: 0;
+  }
+  .sort-selection{
+	width: 244px;
+  }
+  .sort-choice{
+	width: 240px;
+	height: 36px;
+	background-color: #ebf1ef;
+	border: 1px solid #4acea0;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	outline: none !important;
+  }
+  .sort-choice:hover{
+	background-color: #00945e;
+  }
+
+  .apply-filter{
+	display: block;
+	width: 196px;
+	height: 36px;
+	background-color: #00945e;
+	border: 1px solid #4acea0;
+	color: white;
+	cursor: pointer;
+	border-radius: 3px;
+	margin-top: 48px;
+	font-size: 13px;
+	outline: none !important;
+  }
+  .apply-filter:hover{
+	width: 198px;
+	height: 38px;
+	border: 1px solid #4acea0;
+	font-size: 14px;
+  }
+
 
 @media all and (max-width: 599px){
 	.section-container{
