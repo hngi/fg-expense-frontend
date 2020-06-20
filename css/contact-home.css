@@ -1,3 +1,7 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
 .connect {
     background-color: #005938;
     padding: 80px;
@@ -6,67 +10,80 @@
     font-family: Lato;
     text-align: center;
 }
+
 .connect-text h2{
-    font-size: 1.8em;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
 }
+
 .connect-text h5 {
-    font-weight: 100;
-    font-size: .9em;
+    font-size: 18px;
+line-height: 25px;
+margin-top: 15px;
 }
 
 .social button {
-    border-radius: 50%;
-    width: 10px;
-    height: 11px;
-    color: white;
-    background-color: #00945E ;
-    margin-left: 15px;
+    color: #00945E;
+    background-color: white;
+    padding: 10px;
     border: none;
+    margin-top: 35px;
+    border-radius: 5px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
 }
 
-
-.social button:focus {
-    outline: none
-}
-
-.social a{
+.social button a{
     text-decoration: none;
     font-size: 13px;
-    margin-left: 3px;
-    color: white
-}
-
-.social a:hover {
-    color: pink;
-    text-decoration: none;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
+    margin-left: 6px;
+    color: green;
+    width: 120px;
+    font-size: .9em;
+    padding: 5px;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 500px){
+    .connect-text h2{
+        margin-top: -15px;
+        font-size: 32px;
+    }
+    .connect-text h5 {
+        font-size: 1em;
+        margin-top: -5px;
+        font-weight: normal;
+    }
     .social a{
         font-size: 10px
     }
-    .social a{
+    .social button a{
         text-decoration: none;
         font-size: 13px;
         margin-left: 6px;
-        color: white
+        color: green;
+        width: 120px;
+        font-size: .9em;
+        padding: 5px;
+        margin-top: 15px;
     }
-
 }
 @media screen and (max-width: 300px){
     .social a{
         font-size: 10px
     }
-    .social a{
+    .social button a{
         text-decoration: none;
         font-size: 13px;
-        margin-left: 8px;
-        color: white
+        margin-left: 6px;
+        color: green;
+        width: 120px;
+        font-size: .9em;
+        padding: 5px;
+        margin-top: 15px;
     }
 
 }
@@ -84,11 +101,15 @@
         font-size: 10px
     }
   
-    .social a{
+    .social button a{
         text-decoration: none;
-        font-size: 9px;
-        margin-left: 8px;
-        color: white
+        font-size: 13px;
+        margin-left: 6px;
+        color: green;
+        width: 120px;
+        font-size: .9em;
+        padding: 5px;
+        margin-top: 15px;
     }
     
     .connect-text h5 {
