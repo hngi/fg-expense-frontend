@@ -12,9 +12,10 @@
   .main-section h2 {
     margin: 0;
     padding: 0.6rem;
-    padding-left: 4rem;
+    padding-left: 2.3em;
     background: #00945E;
     color: white;
+    margin-top: 5px;
   }
   
   .first {
@@ -22,7 +23,11 @@
     height: 60vh;
     padding: 7rem;
   }
-  
+  .first h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+  }
   .first h2, .first p {
     text-align: center;
     color: white;

@@ -36,6 +36,8 @@ header *{
 .logo2{
     margin-left: -1em;
     width: 150px;
+    margin-top: 25px;
+
 }
 header ul{
     float: right;
