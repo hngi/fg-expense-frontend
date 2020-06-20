@@ -204,7 +204,7 @@
 						<h3>Daily Expenditure</h3>
 						<h5
 							>20th May, 2020 &nbsp;
-							<button>Filter <i class="fas fa-filter"></i></button
+							<button onclick = "show_filter()">Filter <i class="fas fa-filter"></i></button
 						></h5>
 					</div>
 
@@ -336,6 +336,27 @@
 			</div>
 			<!---TABLE ENDS--->
 		</section>
+		<!-----FILTER POPUP-->
+		<div id = "filter-screen">
+			<div class = "filter-popup center">
+				<div class = "filter-header">Filter</div>
+				<div class = "filter-subtext">Select Date</div> 
+				<input type="date" id="" name="">
+				<div class = "filter-subtext">View By</div> 
+				<div class = "view-by-selection clearfix">
+					<button class = "view-choice" id = "day" onclick="filterSelectionView('day')">Day</button>
+					<button class = "view-choice" id = "month" onclick="filterSelectionView('month')">Month</button>
+					<button class = "view-choice" id = "year" onclick="filterSelectionView('year')">Year</button>
+				</div>
+				<div class = "filter-subtext">Sort By</div> 
+				<div class = "sort-selection center">
+					<button class = "sort-choice" id = "htl" onclick="filterSelectionSort('htl')">Amount (Highest to Lowest)</button>
+					<button class = "sort-choice" id = "lth" onclick="filterSelectionSort('lth')">Amount (Lowest to Highest)</button>
+				</div>
+				<div class="applyy">
+				<button class="apply-filter center" onclick="apply()">Apply Filter</button></div>
+			</div>
+		</div>
 
 		<!-- Pop up for project summary -->
 
