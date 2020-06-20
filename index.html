@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/contact-home.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-home.css">
+    <link rel="stylesheet" type="text/css" href="css/chart-section.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Muli:&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <title>ExpenseNg</title>
 </head>
 <body> 
@@ -23,37 +24,33 @@
                 <img src="img/Group 380.svg" class="logo1" alt="logo" srcset="">
                 <img src="img/Frame 384.svg" class="logo2" alt="logo" srcset="">
             </div>  
-            <a href="#"><i class="fa fa-2x fa-bars menu-toggle" id="menu" aria-hidden="true"></i></a>
-            <ul class="nav " id="nav">
-                <!-- <li><i class="hide-desktop fa fa-times exit-btn " id="exit" aria-hidden="true"></i></li> -->
-                <li><a href="#"class="active">Home</a></li>
-                <li><a href="#">Expenditure Report</a>
-                    <ul>
-                        <li><a href="ExpenditureReport.html"class="">Daily Report</a></li>
-                        <li><a href="companysearch.html"class="">Company Profile Search</a></li>
-                        <li><a href="contact.html"class="">Contact</a></li>
-                        <li><a href="quickContacts.html"class="">Quick Contacts</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Ministries</a>
-                    <ul>
-                        <li><a href="#"class="">Home</a></li>
-                        <li><a href="#"class="">Home</a></li>
-                        <li><a href="#"class="">Home</a></li>
-                        <li><a href="#"class="">Home</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Companies</a>
-                    <ul>
-                        <li><a href="#"class="">Home</a></li>
-                        <li><a href=""class="">Home</a></li>
-                        <li><a href="#"class="">Home</a></li>
-                        <li><a href="#"class="">Home</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">About Us</a></li>
-            </ul> 
-        </header>     
+               
+                    <a href="#"><i class="fa fa-2x fa-bars menu-toggle" id="menu" aria-hidden="true"></i></a>
+                    <ul class="nav " id="nav">
+                        <li><a href="index.html"class="active">Home</a></li>
+                        <li><a href="ExpenditureReport.html">Expenditure Report</a></li>
+                       
+                        <li><a href="#">Ministry Info</a>
+                            <ul>
+                                <li><a href="#"class="">Ministry Report</a></li>
+                                <li><a href="#"class="">Ministry Profile Search</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Company Info</a>
+                            <ul>
+                                <li><a href="companyprojects.html"class="">Company Report</a></li>
+                                <li><a href="companyprofile.html"class="">Comapny Profile Search</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Reference</a>
+                            <ul>
+                                <li><a href="quickContacts.html"class="">Government Twitter Handles </a></li>
+                                <li><a href="contact.html"class="">Contact Us</a></li>
+                                <li><a href="#"class="">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul> 
+                </header>
     
         <!-- banner -->
         <div class="banner-section">
@@ -67,158 +64,275 @@
     </div>
     </div>
 
-<!-- Daily expenditure -->
-<main class="container">
-    <!-- Chart Header Row -->
-    <div class="row justify-content-center align-items-center" style="margin-top: 30px;">
-        <div class="col-md-10 text-center font-weight-normal">
-            <h3 id="sub-section-header">
-                Daily Expenditure in Real Time
-            </h3>
+    <main class="container">
+        <!-- Chart Header Row -->
+        <div id="chart-header-row" class="row justify-content-center align-items-center">
+            <div class="col-md-10 text-center font-weight-normal">
+                <h3 class="Expenditure-heading">
+                    Daily Expenditure in Real Time
+                </h3>
+        <hr class="dash">
+            </div>
         </div>
-    </div>
-    <!-- Toggle Button Row -->
-    <div class="row" style="margin: 20px auto;">
-        <div class="col-md-3 offset-md-8">
-            <div class="row align-items-center">
-                <div class="col-md-4 offset-md-4 text-right">
-                    <a href="" type="button" class="btn btn-md">
-                        <i class="fas fa-th fa-2x" style="color: #00945E;"></i>
-                    </a>
-                </div>
-                <div class="col-md-4 text-right">
-                    <a href="" type="button" class="btn btn-md">
-                        <i class="fas fa-list fa-2x" style="color: #00945E;"></i>
-                    </a>
+        <!-- Toggle Button Row -->
+        <div id="toggle-button-row" class="row">
+            <div class="col-md-3 offset-md-8">
+                <div class="row align-items-center">
+                    <div id="chart-button" class="col-md-4 offset-md-4">
+                        <button id="chart-btn" onclick="toggleDataPresentation()" 
+                                type="button" class="btn btn-md">
+                            <i class="fas fa-th fa-2x"></i>
+                        </button>
+                    </div>
+                    <div id="table-button" class="col-md-4">
+                        <button id="table-btn" onclick="toggleDataPresentation()" 
+                                type="button" class="btn btn-md">
+                            <i class="fas fa-list fa-2x"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Date & Filter Row -->
-    <div class="row" style="margin: 20px auto;">
-        <div class="col-md-3 offset-md-6">
-            <div class="row align-items-center">
-                <!-- Report Date -->
-                <div class="col-md-8 text-right">
-                    20th May, 2020
-                </div>
-                <!-- Filter Button -->
-                <div class="col-md-4" style="padding: 0; background: #00945E; color: #FFFFFF;">
-                    <button href="" type="button" class="btn btn-md" style="background: #00945E; color: #FFFFFF;">
-                        Filter<i class="fas fa-filter" style="margin-left: 10px;"></i>
-                    </button>
+        <!-- Date & Filter Row -->
+        <div id="date-filter-row" class="row">
+            <div class="col-md-3 offset-md-6">
+                <div class="row align-items-center">
+                    <!-- Report Date -->
+                    <div id="report-date-row" class="col-md-8">
+                        <span >
+                            20th May, 2020
+                        </span>
+                    </div>
+                    <!-- Filter Button -->
+                    <div id="filter-button-row" class="col-md-4">
+                        <button type="button" class="btn btn-md" 
+                                data-toggle="modal" data-target="#filterModal">
+                            Filter<i class="fas fa-filter"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Chart Canvas Row -->
-    <div class="row justify-content-center align-items-center" style="margin-bottom: 30px;">
-        <div class="col-md-7">
-            <canvas id="expenditure-chart"></canvas>
-        </div> 
-        <div class="col-md-1 h-100">
-
-        </div>
-        <div class="col-md-2">
-            <div class="row">
-                <div class="col-md-6" style="padding-left: 0;">
-                    <h5 id="sub-section-header">
-                        Key
-                    </h5>
+        <!-- Data Presentation - Chart/Table Row -->
+        <div id="data-presentation" class="row">
+            <div class="col-md-6 offset-md-2">
+                <canvas id="expenditure-chart" height="175">
+                </canvas>
+                <!-- X-Axis Legend -->
+                <div id="x-axis" class="row chart-key-items">
+                    <ul class="row list-unstyled align-items-center">
+                        <li class="col-1">
+                            <svg class="january" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="february" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="march" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="april" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="may" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="june" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="july" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="august" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="september" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="october" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="november" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                        <li class="col-1">
+                            <svg class="december" width="15" height="15">
+                                <rect x="0" y="0" width="15" height="15"/>
+                            </svg> 
+                        </li>
+                    </ul>
+                </div> 
+                <!-- X-Axis Label -->
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center">
+                        <span id="x-axis-label">
+                            Months
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <ul class="list-unstyled align-items-center">
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #1F2430;" />
-                        </svg> 
-                          January
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #6765EC;" />
-                        </svg> 
-                        February
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #42E8E0;" />
-                        </svg> 
-                        March
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #2196C4;" />
-                        </svg> 
-                        April
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #005D3B;" />
-                        </svg> 
-                        May
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #004583;" />
-                        </svg> 
-                        June
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #FF0000;" />
-                        </svg> 
-                        July
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #BC0A0A;" />
-                        </svg> 
-                        August
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #9EFF00;" />
-                        </svg> 
-                        September
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #423E85;" />
-                        </svg> 
-                        October
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #71CACE;" />
-                        </svg> 
-                        November
-                    </li>
-                    <li>
-                        <svg width="20" height="20">
-                            <rect x="0" y="0" width="25" height="25"
-                            style="fill: #A4A4A4;" />
-                        </svg> 
-                        December
-                    </li>
-                </ul>
+            <div class="col-md-3 offset-md-1">
+                <div id="chart-key" class="row">
+                    <div class="col-md-6">
+                        <h5>
+                            Key
+                        </h5>
+                    </div>
+                </div>
+                <div id="" class="row chart-key-items">
+                    <ul class="row list-unstyled align-items-center">
+                        <li class="col-4 col-md-12">
+                            <svg class="january" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                              January
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="february" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            February
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="march" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            March
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="april" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            April
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="may" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            May
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="june" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            June
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="july" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            July
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="august" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            August
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="september" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            September
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="october" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            October
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="november" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            November
+                        </li>
+                        <li class="col-4 col-md-12">
+                            <svg class="december" width="20" height="20">
+                                <rect x="0" y="0" width="25" height="25"/>
+                            </svg> 
+                            December
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-
+        <!-- Filter Modal -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <!-- Header -->
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <!-- Body -->
+                        <div class="modal-body">
+                        <section class="row">
+                            <div class="col-6">
+                            <p class="font-weight-bold">Select Date</p>
+                            <input type="date" name="" id="" class="form-control">
+                            </div>
+                        </section>
+                        <br>
+                        <section>
+                            <p class="font-weight-bold">View by</p>
+                            <div class="row">
+                                <div class="col-4">
+                                <button class="btn btn-block btn-pick active">Day</button>
+                                </div>
+                                <div class="col-4">
+                                <button class="btn btn-block btn-pick">Month</button>
+                                </div>
+                                <div class="col-4">
+                                <button class="btn btn-block btn-pick">Year</button>
+                                </div>
+                            </div>
+                        </section>
+                        <br>
+                        <section>
+                            <p class="font-weight-bold">Sort by</p>
+                            <div class="mx-3">
+                                <button class="btn btn-block btn-pick active">Amount (Highest to Lowest)</button>
+                                <button class="btn btn-block btn-pick">Amount (Lowest to Highest)</button>
+                            </div>
+                        </section>
+                        </div>
+                        <!-- Footer -->
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-block active mx-5" data-dismiss="modal">Apply Filter</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
         <!-- BEGINNING OF OUR MAIN FEATURE -->
 <div class="mainfeature-section">
@@ -248,8 +362,8 @@
     </div>
     <div class="right-image"></div>
 </div>
-</div>
-<!-- END OF MAIN FEATURE LIST -->
+    </div>
+    <!-- END OF MAIN FEATURE LIST -->
        <!-- Connect -->
        <div class="connect">
         <div class ="connect-text">

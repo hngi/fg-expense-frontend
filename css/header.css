@@ -1,4 +1,4 @@
-@keyframes Slide_right{
+/* @keyframes Slide_right{
     0%{
         transform: translateX(-400px);
     }
@@ -13,7 +13,7 @@
     100%{
         transform: translateX(0);
     }
-}
+} */
 body{
     margin: 0;
     padding: 0;
