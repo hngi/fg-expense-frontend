@@ -71,6 +71,7 @@ header ul li ul li a:hover{
     background-color:  #00945E;
     text-decoration: none;
     color: white;
+   
 }
 header ul li a{
     display: block;
@@ -79,12 +80,14 @@ header ul li a{
     text-decoration: none;
     margin-right: 25px;
     color: black;
+  
     
 }
 header ul li a:hover{
     text-decoration: none;
     font-weight: 600;
     color: black;
+  
 }
 header .menu-toggle{
     display: none;
