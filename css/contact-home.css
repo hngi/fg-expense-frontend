@@ -20,6 +20,7 @@ body{
 .connect-text h5 {
     font-size: 18px;
 line-height: 25px;
+margin-top: 15px;
 }
 
 .social button {
@@ -35,6 +36,16 @@ line-height: 25px;
     line-height: 29px;
 }
 
+.social button a{
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 6px;
+    color: green;
+    width: 120px;
+    font-size: .9em;
+    padding: 5px;
+    margin-top: 15px;
+}
 
 @media screen and (max-width: 500px){
     .connect-text h2{
@@ -49,13 +60,11 @@ line-height: 25px;
     .social a{
         font-size: 10px
     }
-    .social a{
+    .social button a{
         text-decoration: none;
         font-size: 13px;
         margin-left: 6px;
-        color: white
-    }
-    .social button{
+        color: green;
         width: 120px;
         font-size: .9em;
         padding: 5px;
@@ -66,11 +75,15 @@ line-height: 25px;
     .social a{
         font-size: 10px
     }
-    .social a{
+    .social button a{
         text-decoration: none;
         font-size: 13px;
-        margin-left: 8px;
-        color: white
+        margin-left: 6px;
+        color: green;
+        width: 120px;
+        font-size: .9em;
+        padding: 5px;
+        margin-top: 15px;
     }
 
 }
@@ -88,11 +101,15 @@ line-height: 25px;
         font-size: 10px
     }
   
-    .social a{
+    .social button a{
         text-decoration: none;
-        font-size: 9px;
-        margin-left: 8px;
-        color: white
+        font-size: 13px;
+        margin-left: 6px;
+        color: green;
+        width: 120px;
+        font-size: .9em;
+        padding: 5px;
+        margin-top: 15px;
     }
     
     .connect-text h5 {

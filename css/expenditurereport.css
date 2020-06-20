@@ -127,7 +127,7 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 480px) {
 	.reponsive-div {
-		width: 95%;
+		width: 90%;
 	}
 	
 	.table-top >h3 {
@@ -599,4 +599,13 @@ tr:nth-child(even) {
     .btn img{
         height: 1rem;
     }
+}
+
+
+@media screen and (max-width: 500px){
+	.container .table-section {
+		width: 100%;
+		font-size: 5px;
+
+	}
 }
