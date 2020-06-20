@@ -1,0 +1,148 @@
+/* Company Report Table */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.table-div {
+	margin: 0 auto;
+}
+.table-section {
+	padding: 8px;
+}
+
+.table-top {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px;
+}
+
+.table-top > h3 {
+	color: #00945e;
+	margin: auto 0;
+	padding: 0px;
+}
+.table-top > h5 {
+	padding: 10px 25px;
+	text-align: right;
+}
+
+.table-top button {
+	padding: 10px 30px;
+	background: #00945e;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.table-title {
+	border: 1px solid #f2f2f2;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+th,td {
+	text-align: left;
+	padding: 14px;
+	font-size: 0.9rem;
+}
+
+th {
+	background: white;
+	color: black !important;
+	font-size: 1rem;
+	font-weight: 600;
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+tr > :nth-child(1) {
+	color: #00945e;
+}
+
+tr {
+	border-bottom: 1px solid #f2f2f2;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.table-footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px;
+	margin: 10px 5px;
+}
+
+.table-footer > span {
+	margin: auto 0;
+	color: #191e29;
+}
+
+.pagination {
+	background: #f2f2f2;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: 1px solid #ddd;
+}
+
+.pagination a.active {
+	background-color: #00945e !important;
+	color: white;
+	border: 1px solid #00945e !important;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+.pagination a:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+	.reponsive-div {
+		width: 95%;
+	}
+
+	.table-top {
+		font-size: 0.8rem;
+	}
+
+	.table-top > div {
+		width: 100%;
+	}
+
+	.table-footer {
+		display: block;
+	}
+
+	th {
+		font-size: 0.8rem;
+	}
+
+	.table-footer {
+		margin: 15px 5px 40px 5px;
+	}
+}
