@@ -14,7 +14,7 @@ body {
   color: #FFFFFF;
 }
 #searchBackground {
-  background-image: url('../oil-rig.jpg');
+  background-image: url('../img/oil-rig.jpg');
   background-size: cover;
   background-position: center;
   height: auto;
@@ -32,7 +32,7 @@ body {
   margin-bottom: 8em;
 }
 #myInput {
-  background-image: url('../searchicon.png');
+  background-image: url('../img/searchicon.png');
   background-position: 10px 12px;
   background-size: 20px;
   background-repeat: no-repeat;
