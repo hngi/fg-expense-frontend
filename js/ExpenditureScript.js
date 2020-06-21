@@ -85,7 +85,7 @@ const getAllExpenses = async () => {
                                             </tr>`
     })
     tbody.innerHTML = output;
-    console.log(data.data.expenses)
+   
    
 }
 
