@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" href="css/companysearch.css">
     <title>Company Search</title>
 </head>
 <body>
+    <!-- navbar -->
+    <header>
+        <div class="logo">
+            <img src="img/Group 380.svg" class="logo1" alt="logo" srcset="">
+            <img src="img/Frame 384.svg" class="logo2" alt="logo" srcset="">
+        </div>  
+           
+                <a href="#"><i class="fa fa-2x fa-bars menu-toggle" id="menu" aria-hidden="true"></i></a>
+                <ul class="nav " id="nav">
+                    <li><a href="index.html"class="active">Home</a></li>
+                    <li><a href="ExpenditureReport.html">Expenditure Report</a></li>
+                   
+                    <li><a href="#">Ministry Info</a>
+                        <ul>
+                            <li><a href="#"class="">Ministry Report</a></li>
+                            <li><a href="#"class="">Ministry Profile Search</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Company Info</a>
+                        <ul>
+                            <li><a href="companyprojects.html"class="">Company Report</a></li>
+                            <li><a href="companyprofile.html"class="">Comapny Profile Search</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reference</a>
+                        <ul>
+                            <li><a href="quickContacts.html"class="">Government Twitter Handles </a></li>
+                            <li><a href="contact.html"class="">Contact Us</a></li>
+                            <li><a href="#"class="">About Us</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+    </header><br>
+    <!-- search page -->
     <div id="companySearchPage">
         Company Search
     </div>
@@ -16,12 +54,60 @@
         </div>
         <div id="searchBar">
             <div class="inputdiv">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+                <input type="text" id="myInput" placeholder="Search" title="Type in a name">
             </div>
             <div class="buttondiv">
                 <button type="submit">Search</button>
             </div>
         </div>
     </section>
+    <!-- footer -->
+    <footer>
+        <div class="main-footer-wrapper">
+            <div class="main-box1">
+                <div class="brand-logo">
+                    <img src="img/logo.png"><br>
+                </div>
+                <div class="twitter">
+                    <img src="img/twitter-logo.png">
+                    <a href="#">@expenseng</a>
+                </div>
+            </div>
+            <div class="main-box2">
+                <div class="box1">
+                    <h4>Pages</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Daily Report</a>
+                    <a href="#">Ministry Report</a>
+                    <a href="#">Company Report</a>
+                </div>
+                <div class="box2">
+                    <h4>Profiles</h4>
+                    <a href="#">Ministry Search</a>
+                    <a href="#">Company Search</a>
+                </div>
+                <div class="box3">
+                    <h4>References</h4>
+                    <a href="#">Government Handles</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="last-footer">
+            <ul>
+                <li><a href="#">Accessibility |</a></li>
+                <li><a href="#">&nbspPrivacy Policy |</a></li>
+                <li><a href="#">&nbspFreedom of Information Act</a></li>
+                <li class="push">
+                    <a href="#">&#169; 2020 EXPENSENG.com</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- custom script -->
+    <script src="js/main.js"></script>    
 </body>
 </html>
