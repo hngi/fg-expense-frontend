@@ -1,0 +1,444 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+* {
+  font-family: Lato, sans-serif;
+}
+.ministry_title{
+	width: 100%;
+	background: #00945E;
+	color: white;
+	padding: 10px 50px;
+	font-size: 30px;
+}
+.hero {
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+.hero-img {
+  width: 100%;
+  min-height: 40vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.hero-text h1 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 0.8rem;
+  padding: 0 0.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 43px;
+  }
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+}
+
+media (max-width: 500px) {
+  .list_plotted {
+    top: 300px;
+  }
+}
+.green {
+}
+
+.btn-default {
+  background: #00945e !important;
+  color: #ffffff;
+  width: 20%;
+  margin-left: 2%;
+}
+
+.hang-right {
+  float: right;
+  margin-top: 0;
+}
+
+.right {
+  align-content: right;
+  padding-left: 40%;
+}
+
+.top {
+  width: 100%;
+}
+
+.ministry-table {
+  /*display: flex;*/
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 100%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+#container > p {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+#table {
+  width: 1228px;
+  align-items: center;
+}
+
+thead {
+  background-color: #ffffff;
+  color: black;
+}
+
+.table table-light {
+  stroke: #00945e;
+  font-size: 16px;
+  line-height: 19px;
+  align-self: center;
+}
+
+.ministry {
+  color: #00945e;
+}
+
+.company {
+  color: #6765ec;
+}
+
+.ministry-table {
+  box-shadow: -1px -2px 2px rgba(0, 0, 0, 0.1), 1px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+.table-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.table-name {
+  display: inline-flex;
+  color: #00945e;
+  font-size: 28px;
+}
+
+.table-control span:first-of-type {
+  margin-right: 1em;
+  font-size: medium;
+}
+
+.table-control-span {
+  display: inline-block;
+}
+.table-control button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+.expenditure_graph_body{
+	width: 100%;
+	height: 620px;
+	background: #F6F6F6;
+	text-align: center;
+	padding-top: 40px;
+	position: relative;
+}
+.expenditure_graph_title{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	color: #474747;
+	font-weight: bold;
+}
+.expenditure_graph{
+	width: 850px !important;
+	margin-top: 40px;
+	margin-left: 160px;
+	float: left;
+	order: 1;
+	position: relative;
+}
+#graph_canvas{
+	width: 80% !important;
+	float: left;
+	height: 450px !important;
+	background: white;
+}
+.graph_filter{
+	float: left;
+	order: 2;
+	margin-top: 0px;
+	margin-left: 10px;
+	color: white;
+	background: #00945E;
+	padding: 7px 15px;
+	font-size: 21px;
+	border-radius: 7px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0.1,0.3);
+	cursor: pointer;
+}
+.fa-filter{
+	margin-left: 5px;
+}
+.graph_Xaxis_container{
+	position: absolute;
+    width: 850px;
+    height: 40px;
+    background: #F6F6F6;
+    top: 540px;
+    left: 160px;
+}
+.graph_Xaxis{
+	width: 80%;
+    margin-left: -20px;
+    height: 20px;
+    top: 275px;
+}
+.graph_Xaxis li{
+	list-style: none;
+	width: 20px;
+	height: 100%;
+	float: left;
+	margin-right: 6.5%;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0.1,0.3);
+}
+.graph_Xaxis_title{
+	font-size: 20px;
+	margin-left: -70px;
+	position: absolute;
+	left: 150px;
+	top: 460px;
+}
+.graph_Yaxis_title{
+	font-size: 20px;
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 200px;
+	left: -150px;
+}
+.list_plotted{
+	width: 200px;
+	float: left;
+	text-align: left;
+	margin-left: -35px; 
+	margin-top: 70px;
+	font-size: 14px;
+}
+.list_plotted .list_box{
+	width: 100%;
+	float: left;
+}
+.list_plotted .list_box div{
+	width: 20px;
+	height: 20px;
+	margin-bottom: 12px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0.1,0.3);
+	float: left;
+}
+.list_plotted .list_box p{
+	float: left;
+	width: 170px;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 7px;
+}
+.graph_date{
+	font-size: 16px;
+	position: absolute;
+	top: 5px;
+	left: 550px;
+}
+@media (max-width: 1175px){
+	.expenditure_graph{
+		width: 600px !important;
+	}
+	#graph_canvas{
+		height: 350px !important;
+	}
+	.graph_date{
+		left: 360px;
+	}
+	.graph_Xaxis_container{
+		top: 435px;
+		width: 600px;
+	}
+	.graph_Xaxis li{
+		margin-right: 5%;
+	}
+	.graph_Yaxis_title{
+		top: 170px;
+	}
+	.graph_Xaxis_title{
+		top:370px;
+	}
+	.expenditure_graph_body{
+		height: 550px;
+	}
+
+}
+@media (max-width: 926px){
+	.expenditure_graph_body{
+		height: 900px;
+	}
+	.expenditure_graph{
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin-right: auto;
+		margin-left: auto;
+		width: 700px;
+	}
+	.list_plotted{
+		width: 200px !important;
+		position: absolute;
+		left: 30px;
+		float: none;
+		top: 450px;
+		margin-left: 30px;
+	}
+	.graph_Xaxis_title{
+		top: 370px;
+	}
+	.graph_Xaxis_container {
+	    top: 440px;
+	    width: 600px;
+	    left: 0;
+	    right: 0;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	.graph_filter{
+		margin-right: 10px;
+		float: right;
+	}
+	.expenditure_graph_title{
+		font-size: 22px;
+	}
+}
+@media (max-width: 700px){
+	.expenditure_graph_title{
+		font-size: 20px;
+	}
+	.expenditure_graph{
+		width: 85% !important;
+		margin-top: 70px;
+	}
+	#graph_canvas{
+		width: 97% !important;
+	}
+	.graph_Xaxis_container {
+		 top: 465px;
+		 width: 90%;
+	}
+	.graph_filter{
+		float: none;
+		position: absolute;
+		top: -45px;
+		right: 4%;
+	}
+	.graph_Xaxis{
+		width: 100%;
+		margin-left: -3px
+	}
+	.graph_Xaxis li{
+		margin-right: 6%;
+	}
+	.graph_Yaxis_title{
+		top: 155px;
+	}
+	.graph_date{
+		left: 70%;
+	}
+	.graph_Xaxis li{
+		width: 15px;
+		height: 15px;
+	}
+	.list_plotted li{
+		width: 15px;
+		height: 15px;
+	}
+	.list_plotted{
+		font-size: 17px;
+	}
+	.list_plotted span{
+		margin-top: -3px;
+	}
+}
+@media (max-width: 550px){
+	.expenditure_graph{
+		width: 90%;
+		margin-left: 50px;
+		margin-top: 50px;
+	}
+	.expenditure_graph_body{
+		text-align: left;
+		height: 750px;
+	}
+	.graph_Xaxis_container {
+		top: 330px;	
+		width: 100%;
+	}
+	.graph_Xaxis_title{
+		font-size: 12px;
+	    left: 70px;
+	    top: 210px;
+	}
+	.graph_Yaxis_title{
+		font-size: 12px;
+	    left: -90px;
+	    top: 80px;
+	}
+	#graph_canvas{
+		height: 200px !important;
+	}
+	.graph_date{
+		left: 60%;
+		font-size: 12px;
+	}
+	.expenditure_graph_title{
+		margin-left: 30px;
+	}
+	.graph_Xaxis{
+		width: 85%;
+		margin-left: 10%;
+	}
+	.graph_Xaxis li{
+		width: 10px;
+		height: 10px;
+		margin-right: 5.5%;
+	}
+	.list_plotted li{
+		width: 10px;
+		height: 10px;
+	}
+	.graph_filter{
+		font-size: 12px;
+	}
+	.list_plotted{
+		top: 330px;
+		font-size: 12px;
+	}
+
+}
