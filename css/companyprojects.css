@@ -29,6 +29,7 @@ button {
   font-size: 28px;
   line-height: 34px;
   padding: 16px 10px 16px 37px;
+  margin-top: 10px;
 }
 
 .company {
@@ -138,13 +139,10 @@ tr:nth-child(even) {
   margin: 10px 5px;
 }
 
-.table-footer > span {
+.table-footer > div {
+  padding: 10px 1px;
   margin: auto 0;
-  color: #191e29;
-}
-
-.pagination {
-  background: #f2f2f2;
+  /* color: #191e29; */
 }
 
 .pagination a {
@@ -197,7 +195,7 @@ tr:nth-child(even) {
   }
 
   .table-footer {
-    margin: 15px 5px 40px 5px;
+    margin: 7px 5px 40px 5px;
   }
 
   .company {
