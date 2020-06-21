@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/handlePage.css">
+    <!-- Page Title -->
+    <title>Expense NG</title>
+</head>
+
+<body>
+    <main class="container">
+        <!--Generic navigation Bar -->
+        <!-- <nav></nav> -->
+        <div class="header">
+            <span>Government Handles</span>
+        </div>
+        <div class="page-desc">
+            <h2>Twitter Handles</h2>
+            <p>
+                Get the Twitter handles of Federal Mininstries in Nigeria
+                nd the twitter handles of incumbent ministers
+                of Federal Republic of Nigeria.
+            </p>
+        </div>
+        <div class="handle-wrapper">
+            <!-- <div class="search">
+                <form action="" method="post" class="min-search">
+                    <div class="search-wrapper">
+                        <input type="search" name="min-name" id="min-name" placeholder="Search Minister/Ministry">
+                        <div class="search-btn">
+                            <span class="fa fa-search"></span>
+                        </div>
+                    </div>
+                </form>
+            </div> -->
+
+            <!-- <div class="select-min">
+                <label for="min-select">Select View</label>
+                <div class="select-wrapper">
+                    <select name="min-select" id="min-select" onchange="display(this.value)">
+                        <option value="minister" class="sel-opt">Ministers' Handles</option>
+                        <option value="ministry" class="sel-opt">Ministries' Handles</option>
+                    </select>
+                </div>
+            </div> -->
+            <h4>Check for all ministry or minister, by clicking</h4>
+            <div class="toggle" id="minister-toggle" onclick="showMinister()">
+                <p>
+                    Ministers' Handles
+                </p>
+                <span class="fa fa-chevron-down" id="minister-chev-down"></span>
+                <span class="fa fa-chevron-up" id="minister-chev-up"></span>
+            </div>
+            <div id="minister-tab" class="details">
+                <div class="minister-info info-header">
+                    <div class="info">
+                        <p>Portfolio</p>
+                    </div>
+                    <div class="info">
+                        <p>Incumbent</p>
+                    </div>
+                    <div class="info">
+                        <p>Handle</p>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="minister-info">
+                        <div class="info">
+                            <p>President</p>
+                        </div>
+                        <div class="info">
+                            <p>Muhammadu Buhari</p>
+                        </div>
+                        <div class="info">
+                            <p>@Mbuhari</p>
+                        </div>
+                    </div>
+                    <div class="minister-info">
+                        <div class="info">
+                            <p>Vice President</p>
+                        </div>
+                        <div class="info">
+                            <p>Yemi Osinbajo</p>
+                        </div>
+                        <div class="info">
+                            <p>@ProfOsinbajo</p>
+                        </div>
+                    </div>
+                    <div class="minister-info">
+                        <div class="info">
+                            <p>Minister of Justice</p>
+                        </div>
+                        <div class="info">
+                            <p>Abubakar Malami</p>
+                        </div>
+                        <div class="info">
+                            <p>@MalamiSan</p>
+                        </div>
+                    </div>
+                    <div class="minister-info">
+                        <div class="info">
+                            <p>Vice President</p>
+                        </div>
+                        <div class="info">
+                            <p>Yemi Osinbajo</p>
+                        </div>
+                        <div class="info">
+                            <p>@ProfOsinbajo</p>
+                        </div>
+                    </div>
+                    <div class="minister-info">
+                        <div class="info">
+                            <p>President</p>
+                        </div>
+                        <div class="info">
+                            <p>Muhammadu Buhari</p>
+                        </div>
+                        <div class="info">
+                            <p>@Mbuhari</p>
+                        </div>
+                    </div>
+                    <div class="minister-info">
+                        <div class="info">
+                            <p>Vice President</p>
+                        </div>
+                        <div class="info">
+                            <p>Yemi Osinbajo</p>
+                        </div>
+                        <div class="info">
+                            <p>@ProfOsinbajo</p>
+                        </div>
+                    </div>
+                    <div class="minister-info">
+                        <div class="info">
+                            <p>President</p>
+                        </div>
+                        <div class="info">
+                            <p>Muhammadu Buhari</p>
+                        </div>
+                        <div class="info">
+                            <p>@Mbuhari</p>
+                        </div>
+                    </div>
+                    <div class="minister-info">
+                        <div class="info">
+                            <p>Vice President</p>
+                        </div>
+                        <div class="info">
+                            <p>Yemi Osinbajo</p>
+                        </div>
+                        <div class="info">
+                            <p>@ProfOsinbajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ministry-toggle" class="toggle" onclick="showMinistry()">
+                <p>
+                    Ministries' Handles
+                </p>
+                <span class=" fa fa-chevron-down" id="ministry-chev"></span>
+                <span class="fa fa-chevron-up" id="ministry-chev-up"></span>
+            </div>
+            <div id="ministry-tab" class="details">
+                <div class=" ministry-info info-header">
+                    <div class="info">
+                        <p>Ministry</p>
+                    </div>
+                    <div class="info">
+                        <p>Handle</p>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="ministry-info">
+                        <div class="info">
+                            <p>Agriculture</p>
+                        </div>
+                        <div class="info">
+                            <p>@FmardNg</p>
+                        </div>
+                    </div>
+                    <div class="ministry-info">
+                        <div class="info">
+                            <p>Agriculture</p>
+                        </div>
+                        <div class="info">
+                            <p>@FmardNg</p>
+                        </div>
+                    </div>
+                    <div class="ministry-info">
+                        <div class="info">
+                            <p>Agriculture</p>
+                        </div>
+                        <div class="info">
+                            <p>@FmardNg</p>
+                        </div>
+                    </div>
+                    <div class="ministry-info">
+                        <div class="info">
+                            <p>Agriculture</p>
+                        </div>
+                        <div class="info">
+                            <p>@FmardNg</p>
+                        </div>
+                    </div>
+                    <div class="ministry-info">
+                        <div class="info">
+                            <p>Agriculture</p>
+                        </div>
+                        <div class="info">
+                            <p>@FmardNg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/handlePage.js"></script>
+<script src="https://kit.fontawesome.com/ae3427d2c7.js" crossorigin="anonymous"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+
+</html>
