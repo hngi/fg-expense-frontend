@@ -68,6 +68,10 @@ button {
   color: #FFFFFF;
   border-radius: 5px;
 }
+#searchResult {
+  background-color: #E5E5E5;
+  height: 25vh;
+}
 @media (min-width: 300px) and (max-width: 425px) {
   #searchBar {
     display: flex;
