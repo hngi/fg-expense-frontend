@@ -2,41 +2,83 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Ministry Expenditure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+  crossorigin="anonymous"
+/>
+	<title>Ministry Expenditure Report</title>
 	<link rel="stylesheet" type="text/css" href="css/ministry_expenditure.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	 <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	 <div class="ministry_title">Ministries Report</div>
+  <!-- navbar -->
+  <header>
+<div class="logo">
+  <img src="img/Group 380.svg" class="logo1" alt="logo" srcset="">
+  <img src="img/Frame 384.svg" class="logo2" alt="logo" srcset="">
+</div>  
+ 
+    <a href="#" class="menu-toggle"><i class="fa fa-2x fa-bars " id="menu" aria-hidden="true"></i></a>
+      <ul class="nav " id="nav">
+          <li><a href="index.html"class="active">Home</a></li>
+          <li><a href="ExpenditureReport.html">Expenditure Report</a></li>
+         
+          <li><a href="#">Ministry Info</a>
+              <ul>
+                  <li><a href="#"class="">Ministry Report</a></li>
+                  <li><a href="#"class="">Ministry Profile Search</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Company Info</a>
+              <ul>
+                  <li><a href="companyprojects.html"class="">Company Report</a></li>
+                  <li><a href="companyprofile.html"class="">Comapny Profile Search</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Reference</a>
+              <ul>
+                  <li><a href="quickContacts.html"class="">Government Twitter Handles </a></li>
+                  <li><a href="contact.html"class="">Contact Us</a></li>
+                  <li><a href="#"class="">About Us</a></li>
+              </ul>
+          </li>
+      </ul> 
+  </header>
+
+	<div class="ministry_title">Ministries Report</div>
 	<div class="hero">
-      <img
-        class="hero-img"
-        src="https://user-images.githubusercontent.com/54963460/85075373-012b4a80-b1b6-11ea-88c4-b9ba4cfd22a0.png"
-      />
-      <div class="hero-text">
-        <h1>Ministry Expenditure Report</h1>
-        <p>
-          The government awards funds to ministries for their functions. Use our
-          Ministries ExpendiureProfile to get a better understanding of how
-          ministries spend congressional funding to carry out their programs,
-          projects, and activities.
-        </p>
-      </div>
+    <img class="hero-img"
+      src="https://user-images.githubusercontent.com/54963460/85075373-012b4a80-b1b6-11ea-88c4-b9ba4cfd22a0.png"
+    />
+    <div class="hero-text">
+      <h1>Ministry Expenditure Report</h1>
+      <p>
+        The government awards funds to ministries for their functions. Use our
+        Ministries ExpendiureProfile to get a better understanding of how
+        ministries spend congressional funding to carry out their programs,
+        projects, and activities.
+      </p>
     </div>
+  </div>
 	<div class="expenditure_graph_body">
 		<div class="expenditure_graph_title">Graph Representation of Top 10 Ministry Expenditure</div>
 		<div class="expenditure_graph">
 			<canvas id="graph_canvas"></canvas>
-			<div class="graph_filter"><span>Filter</span><i class="fa fa-filter"></i></div>
+      <div class="dropdown">
+        <button class="btn dropbtn graph_filter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Filter<i class="fa fa-filter"></i>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item " id="highLow" href="#" onclick="myFunction(this.id)">Highest to lowest Amount</a>
+          <a class="dropdown-item" id="lowHigh" href="#" onclick="myFunction(this.id)">Lowest to Highest Amount</a>
+        </div>
+      </div>
 			<div class="graph_Xaxis_title">Top 10 Ministries With Most Expenditure</div>
 			<div class="graph_Yaxis_title">Amount Expenditure (Millions)</div>
 			<div class="graph_date">20th May 2020</div>
@@ -59,105 +101,86 @@
 		
 		<div class="list_plotted">
 			<p>Key</p>
-			<div class="list_box">
-				<div style="background: #1F2430;"></div><p>Ministry of Education</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #6765EC;"></div><p>Ministry of Agriculture</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #42E8E0;"></div><p>Ministry of Petroleum</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #2196C4;"></div><p>Ministry of Finance</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #005D3B;"></div><p>Ministry of Works</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #004583;"></div><p>Ministry of Electricity</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #FF0000;"></div><p>Ministry of Transportation</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #BC0A0A;"></div><p>Ministry of Agriculture</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #9EFF00;"></div><p>Ministry of Information</p>
-			</div>
-			<div class="list_box">
-				<div style="background: #423E85;"></div><p>Ministry of Education</p>
-			</div>
-		</div>
-	</div>
-	<section class="ministry-table">
-      <div id="container">
-        <div class="table-data">
-          <div class="table-name">
-            Ministry Expenditure
-          </div>
-          <div class="table-control">
-            <span class="table-control-span">20th, of May 2020</span>
-            <span class="table-control-span"
-              ><button
-                type="button"
-                class="btn btn-default btn-sm btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <svg
-                  class="bi bi-filter"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
-                  />
-                </svg>
-                Filter
-              </button>
-              <span class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <input
-                  class="form-control"
-                  id="myInput"
-                  onkeyup="myFunction()"
-                  type="text"
-                  placeholder="by ministry or minister.."
-                />
-              </span>
-            </span>
-          </div>
+	 </div>
+  </div>
 
-          <!--      aria-hidden="true" -->
-        </div>
-
-        <div class="table">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Ministry</th>
-                <th scope="col">Minister</th>
-                <th scope="col">Twitter</th>
-                <th scope="col">Amount</th>
-              </tr>
-            </thead>
-
-            <tbody id="myTable"></tbody>
-          </table>
-        </div>
+  <!--=========================begining of Ministry list section========================-->
+  <div class="ministry_list_body">
+    <div class="ministry_list_table">
+      <div class="table_title_container">
+       <div class="table_name">Ministry Expenditure</div>
+       <div class="filter_section">
+         <p>20th May 2020</p>
+         <div class="btn table_filter"><span>Filter</span><i class="fa fa-filter"></i></div>
+       </div>
       </div>
-    </section>
+      <div>
+        <table class="main_table">
+          <tr class="ministry_list_table_header">
+            <th>Ministry</th>
+            <th>Minister</th>
+            <th>Twitter</th>
+            <th>Amount</th>
+          </tr>
+        </table>
+      </div>
+      <div class="filter_option">
+        <input type="search" name="input_filter" id="myInput">
+      </div>
+    </div>
+  </div>
+  <!--=========================Ending of Ministry list section========================-->
 
-    <script type="text/javascript" src="ministry_expenditure.js"></script>
 
+  <footer>
+        <div class="main-footer-wrapper">
+            <div class="main-box1">
+                <div class="brand-logo">
+                    <img src="img/logo.png"><br>
+                </div>
+                <div class="twitter">
+                    <img src="img/twitter-logo.png">
+                    <a href="#">@expenseng</a>
+                </div>
+            </div>
+            <div class="main-box2">
+                <div class="box1">
+                    <h4>About Us</h4>
+                    <a href="#">About Expenseng.com</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="box2">
+                    <h4>Pages</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Daily Payment Report</a>
+                    <a href="#">Companies</a>
+                    <a href="#">Ministry</a>
+                </div>
+            </div>
+        </div>
+        <div class="last-footer">
+            <ul>
+                <li><a href="#">Accessibility |</a></li>
+                <li><a href="#">&nbspPrivacy Policy |</a></li>
+                <li><a href="#">&nbspFreedom of Information Act</a></li>
+                <li class="push">
+                    <a href="#">&#169; 2020 EXPENSENG.com</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $(".main_table tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+    <script type="text/javascript" src="js/ministry_expenditure.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -173,16 +196,5 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $("#myInput").on("keyup", function () {
-          var value = $(this).val().toLowerCase();
-          $("#myTable tr").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-          });
-        });
-      });
-    </script>
 </body>
-<script type="text/javascript" src="js/ministry_expenditure.js"></script>
 </html>
