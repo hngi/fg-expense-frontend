@@ -1,0 +1,40 @@
+body {
+    background: #E5E5E5;
+}
+.roundtable{
+    background-image: url(./assets/images/2.png);
+    /* position: absolute; */
+    width: 1400px;
+    height: 300px;
+    left: 31px;
+    top: 134px;
+    padding: 20px;
+}
+h3 {
+    position: relative;
+    width: 920px;
+    height: 43px;
+    left: 180px;
+    top: 60px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 43px;
+    text-align: center;
+    color: #FFFFFF;
+}
+h6 {
+    position: relative;
+    width: 920px;
+    height: 43px;
+    left: 180px;
+    top: 60px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}

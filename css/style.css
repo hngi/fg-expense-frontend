@@ -1,232 +1,256 @@
+/* @keyframes Slide_right{
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes Slide_left{
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
-.containerr{
-    text-align: center;
-}
-.logo1{
-    width: 60px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-.logo2{
-width: 120px;
-margin-left: -10px;
-}
-.hide-mobile{
-display: none;
-}
-.menu{
-   margin-top: 35%; 
-   margin-right: 15px;
-    color: black;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-}
-li{
-list-style-type: none;
-}
-nav ul{
-    position: fixed;
-    width: 40%;
-    top: 0;
-    right: 0;
-    text-align: left;
-    background:rgb(13, 189, 136);
-    height: 100%;
-    padding: 3em;
-}
-nav ul li a{
-color: white;
-text-decoration: none;
-display: block;
-width: 100%;
-padding: 1em ;
-background-color: rgb(32, 128, 99);
-}
-.exit-btn{   
-margin-bottom: 1em;
-margin-top: -1.3em;
-cursor: pointer;
-}
 /* banner */
+.banner-section{
+    width: 100%;
+    animation: Slide_right 1.1s ease-in;
+}
 .home-banner{
     background-color: #00945E;
-    width: 96.5%;
-    height: 30px;
+    height: 40px;
     color: #fff;
     text-align: left;
     padding-left: 15px;
-    padding-top: 5px;
+    padding-top: 10px;
     margin-top: 10px;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    
 }
 .banner{
-    width: 100%;
-    background: #80CAAF;
+    background: linear-gradient( rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.623) ), url(../img/images28.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
     margin-top: -21px;
 }
 .banner h1{
+    text-align: left;
     font-size: 1.5em; 
     font-weight: bold;
     padding-top: 25px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
+    margin-top: 21px;
+    color: white;
+    font-family: 'Lato', sans-serif;
 }
 .banner p{
     font-size: 12px;
-    padding: 0 20px;
+    text-align: left;
+    color: white;
+    padding-right: 30px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
 }
-.home-btn{
-    width: 120px;
-    background: #FFFFFF;
-    border: 1.5px solid #00945E;
+/* MAIN FEATURE  */
+.mainfeature-section{
+margin-bottom: 20px;
+text-align: center;
+}
+.mainfeature-heading h3{
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.dash{
+    margin-top: -5px;
+    color: green;
+    width: 10%;
+    border-width: 3px;
+    border-color: #00945E;    
+}
+.mainfeature-item{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column ;
+    margin-top: 20px;
+}
+.left-image{
+    width: 100%;
+    height: 220px;
+    background: url(../img/Rectangle\ 331.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.right-image{
+    width: 100%;
+    height: 240px;
+    margin-top: 20px;
+    background: url(../img/exec.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.green-heading{
     color: #00945E;
     font-weight: bold;
-    box-sizing: border-box;
-    border-radius: 5px;
+    margin-top: 15px;
+}
+.right-content p, .left-content p{
+    
+    padding: 12px;
+    font-size: .9em;
+    margin-top: -10px;
+    color: #353A45;
+}
+.first{
+    animation: Slide_right 1.5s ease-in;
+}
+.second{
+    animation: Slide_left 1.5s ease-in;
+}
+.right-content .btn, .left-content .btn{
+    width: 120px;
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: -20px;
+    background: #00945E;
+    color: #fff;
+    border-radius: 5px;
+    border-style: none;
     cursor: pointer;
 }
-.home-btn:hover{
-    background-color: rgb(248, 245, 245);
-}
-/* search */
-input{
-    width: 80%;
-    margin-top: 20px;
-    padding: 10px;
-}
-::placeholder{
-padding-left: 15px;
-}
-.fa-search{
-   margin-left: 0px;
+.right-content .btn:hover, .left-content .btn:hover{
+    background: #018655;
+    color: #fff;
 }
 
 @media only screen and (min-width: 650px){
-    .menu{
-margin-right: 30px;
-    }
-    .home-btn{
-        width: 140px;
-    }
+    
 }
 
 @media only screen and (min-width: 1024px){
-    body{
-        overflow-x: hidden;
-    }
-    .logo1{
-        width: 80px;
-        margin-top: 8px;
-        margin-left: 30px;
-    }
-    .logo2{
-        width: 150px;
-    }
-    nav ul{
-        width: auto;
-        position: inherit;
-        background: none;
-        height: auto;
-        display: flex;
-        padding-top: 0;
-    }
-    .show-desktop{
-        display: block;
-    }
-    .hide-desktop{
-        display: none;
-    }
-    nav ul li{
-        float: left;
-    }
-    .exit-btn{
-        color: #fff;
-    }
-    nav ul li a{
-        color: #323E48;
-        background-color: inherit;
-        font-size: 18px;
-    }
-    nav ul li a:hover{
-        text-decoration: underline rgb(13, 189, 136);
-    }
     .active{
         font-weight: bold;
     }
     .home-banner{
-        width: 100%;
-        margin-top: -15px;
-        height: 40px;
+        /* width: 100%; */
+        margin-top: 10px;
+        height: 50px;
         padding-top: 10px;
-        padding-left: 36px;
-        font-size: 1em;
-        font-weight: 800;
+        padding-left: 55px;
+        font-weight: bold;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
     }
     .banner{
-        margin-top: -28px;
-        height: 300px;
+        margin-top: -45px;
+        height: 503px;
+        width: 100%;
     }
     .banner h1{
-       padding-top: 50px;
-        font-size: 30px;
-        font-weight: bolder;
+       padding-top: 70px;
+       font-size: 56px;
+        line-height: 74px;
+       font-weight: bolder;
+       margin-left: 30px;
+        margin-top: 45px;
     }
     .banner p{
-        font-size: 17px;
-        padding: 0 40px;
-        font-weight: 600;
+        width: 57%;
+        padding-left: 50px;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        padding-top: 10px;
     }
-    .home-btn{
-        margin-bottom: 20px;
-        margin-top: 30px;
-        width: 160px;
-        padding: 15px;
+    .mainfeature-item{
+        flex-direction: row;
+        width: 70%;
     }
-}
+    .mainfeature-heading h3{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 135.5%;
+    }
+    .dash{
+        margin-top: -5px;
+    }
+    .green-heading{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 135.5%;
+    }
+    .first{
+        margin-left: 180px;
+        margin-top: 50px;
+        animation: Slide_right 1.3s ease-in;
+    }
+    .second{
+        margin-right: 180px;
+        margin-top: 20px;
+        animation: Slide_left 1.3s ease-in;
+    }
+    .left-image, .right-image{
+        height: 350px;
+        margin-right: 5px;
+        width: 50%;
+    }
+    .right-image{
+margin-left: 30px;
+    }
+    .right-content, .left-content{
+        width: 50%;
+        margin-top: 20px;
+        text-align: left;
+        margin-left: 30px;
+        font-size: 16px;
+        line-height: 152%;
+    }
+    .right-content{
+        margin-left: 50px;
+    }
+    .left-content{
+        margin-left: 100px;
+    }
+    .green-heading{
+        font-size: 1.5em;
+        line-height: 135.5%;
+    }
+    .right-content p, .left-content p{
+        font-size: 20px;
+        line-height: 152%;
+        width: 100%;
+    }
+    .right-content p{
+        padding-left: 1px;
+    }
+    .left-content p{
+        padding-left: 1px;
+    
+    }
+    .right-content .btn, .left-content .btn{
+        padding: 10px;
+        width: 150px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 29px;
+    }
 
-/* Recent Tab */
-.recent .wrapper .container{
- 	text-align:left !important;
-}
-.recent .wrapper{
-    padding: 30px 30px 30px 50px;
-    margin: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-}
-.recent-title{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    text-align:left;
-    line-height: 25px;
-    color: #1F2430;
-}
-.recent-title2{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #1F2430;
-    text-transform: uppercase;
-}
-.recent-title3{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    color: #1F2430;
 }

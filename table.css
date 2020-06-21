@@ -1,0 +1,57 @@
+table{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border: 1px solid rgb(59, 58, 58);
+width: 60%;
+padding: 5px;
+}
+
+.Daily{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+border: 1px solid rgb(59, 58, 58);
+width: 59.1%;
+padding: 5px;
+}
+
+.Daily h3, .Daily h5, #filter{
+    display: inline-block;
+    margin: 10px;
+}
+.Daily h3{
+    color: #00945E
+}
+.Daily h5{
+    margin-left: 47%;
+    font-size: 12px;
+}
+
+#filter{
+    width: 8%;
+    position: relative;
+    margin-left: 6%;
+    color: antiquewhite;
+    background-color: #00945E;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    font-size: 12px;
+}
+
+th{
+    width: 10%;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+td{
+    padding: 8px;
+    font-size: 12px;
+  } 
+tfoot{
+    font-size: 10px;
+    color: rgb(59, 58, 58);
+    height: 2cm;
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color: #f5f5f5;}
+
