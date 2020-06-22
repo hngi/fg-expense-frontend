@@ -778,3 +778,9 @@ font-size: 19px;
         height: 1rem;
     }
 }
+
+/* Pagination */
+.pagination a.disabled{
+	cursor: not-allowed;
+	color: #ccc !important;
+}
