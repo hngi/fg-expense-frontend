@@ -480,7 +480,7 @@ font-size: 19px;
 }
 
 .comment-input{
-	width: 60%;
+	min-width: 50%;
 	background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
