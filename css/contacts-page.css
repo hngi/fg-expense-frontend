@@ -108,9 +108,13 @@ span{
   .ministry{
     display: inline-block;
    text-decoration: none;
-   margin: 4rem;
-   margin-top: 20px;
-   margin-bottom: 20px;
+
+margin: 3rem 0 3rem 0;
+
+
+  
+   
+
     padding: 5px 8px;
    color: black;
   }
@@ -146,8 +150,12 @@ span{
      .second {
        width: 90%; 
        margin: auto;
+
+       
+
        margin-top: 20px;
        margin-bottom: 20px;
+
      }
 
      .first {
@@ -165,4 +173,10 @@ span{
        text-align: center;
        padding: 5px 8px;
      }
+    }
+
+    @media only screen and (max-width: 425) {
+      .ministry {
+        margin: 20px 0 20px 0;
+      }
     }
