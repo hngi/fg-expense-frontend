@@ -167,4 +167,15 @@ pagination.addEventListener('click', e => {
 
 closeButton.addEventListener('click', hidePopup);
 
+
 window.addEventListener('load', getAllExpenses(page, limit))
+
+
+let showEdit = function(){
+    document.querySelector('.section-edit-delete').classList.add('show')
+}
+let addEdit = document.querySelectorAll('.comment-option').forEach
+(addEdit => addEdit.addEventListener('click', showEdit));
+
+window.addEventListener('load', getAllExpenses)
+
