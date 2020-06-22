@@ -44,3 +44,9 @@ let hidePopup = function(){
     document.querySelector('.section-wrapper').classList.remove('show')
 }
 closeButton.addEventListener('click', hidePopup);
+
+let showEdit = function(){
+    document.querySelector('.section-edit-delete').classList.add('show')
+}
+let addEdit = document.querySelectorAll('.comment-option').forEach
+(addEdit => addEdit.addEventListener('click', showEdit));
