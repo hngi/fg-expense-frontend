@@ -473,7 +473,6 @@ tr:nth-child(even) {
 
 
 /* ----------------------BODY COMMENT ------------------ */
-
 .comments {
     background-color: rgba(0, 148, 94, 0.28);
     display: flex;
@@ -493,7 +492,7 @@ tr:nth-child(even) {
     box-sizing: border-box;
     display: flex;
     background-color: white;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     border: #00945e solid 1px;
     border-radius: 5px;
@@ -504,6 +503,7 @@ tr:nth-child(even) {
   .subcomment {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     background-color: white;
     margin-left: 50px;
     margin-top: 30px;
@@ -530,7 +530,10 @@ tr:nth-child(even) {
     right: 20px;
     cursor: pointer;
   }
-  
+  .topright .dropdown-item{
+    font-size: 17px;
+    margin: 0px 0px;
+  }
   .react > span {
     margin-right: 10px;
   }
@@ -575,23 +578,47 @@ tr:nth-child(even) {
     right: 20px;
   }
   
+  @media only screen and (max-width: 411px) {
+    .graphbody svg {
+      width: 270px;
+    }
+    .graphlabel {
+      left: 110px;
+      top: 90px;
+    }
+    .colors {
+      left: calc(50% + 40px);
+    }
+    .colors .color {
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+    }
+    .comment {
+      width: 95%;
+    }
+    .subcomment {
+      margin-left: -70px;
+    }
+  }
+.dropdown img {
+  width: 15px;
+  height: 15px;
+  padding: 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+#dropdownMenuLink {
+  padding: 0px 0px ;
+  font-size: 20px;
+}
+.dropdown-menu dropdown-item {
+  font-size: 20px;
+  margin: 0px 0px;
+}
 
-
-
-
-
-
-
-
-
+  
 
 /*------------------- footer------------- */
-   
-      
-          
-       
-       
-
 @media (max-width: 1200px) {
     .j_img1 {
         width: 700px;
