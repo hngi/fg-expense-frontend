@@ -177,5 +177,5 @@ let showEdit = function(){
 let addEdit = document.querySelectorAll('.comment-option').forEach
 (addEdit => addEdit.addEventListener('click', showEdit));
 
-window.addEventListener('load', getAllExpenses)
+
 
