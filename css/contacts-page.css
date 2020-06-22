@@ -3,12 +3,28 @@
             box-sizing: border-box;
     font-family: 'Lato', sans-serif;
   }
-  
+ 
+
   body {
     margin: 0;
     padding: 0;
   }
-  
+  .logo{
+    margin-top: 0 !important ;
+  }
+  header ul li{
+      margin-top: 22px !important;
+  }
+
+
+  header ul li a {
+    display: block;
+     padding: 0 !important; 
+     font-size:inherit !important; 
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+  }
   .main-section h2 {
     margin: 0;
     padding: 0.6rem;

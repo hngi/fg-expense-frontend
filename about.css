@@ -1,0 +1,211 @@
+@keyframes Slide_right{
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes Slide_left{
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    height: 60px;
+    font-family: 'Lato', sans-serif;
+    animation: Slide_left 1.1s ease-in;
+}
+header *{
+    color: black;
+}
+.logo{
+    float: left;
+    height: inherit;
+    margin-left: 3.2em;
+    margin-top: 15px;
+}
+.logo2{
+    margin-left: -1em;
+    width: 150px;
+}
+header ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header ul li{
+    float: left;
+    position: relative;    
+    margin-top: 18px;
+}
+header ul li ul{
+    position: absolute;
+    top: 40px;
+    right: 6px;
+    display: none;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a{
+    padding: 10px;
+    background: #ebf1ef;
+    text-align: center;
+}
+header ul li ul li a:hover{
+    background-color:  #00945E;
+    text-decoration: none;
+    color: white;
+}
+header ul li a{
+    display: block;
+    padding: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+    
+}
+header ul li a:hover{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+header .menu-toggle{
+    display: none;
+}
+.active{
+    font-weight: bold;
+    color: black;
+}
+
+.banner-section{
+    width: 100%;
+    animation: Slide_right 1.1s ease-in;
+}
+.home-banner{
+    background-color: #00945E;
+    height: 40px;
+    color: #fff;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 15px;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.banner{
+    background: linear-gradient( rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.623) ), url(./img/Top\ Picture\ Header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100%; */
+    margin-top: -21px;
+    height: 450px;
+}
+.banner h1{
+    text-align: center;
+    font-size: 2em; 
+    font-weight: bold;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 21px;
+    margin-left: 15px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.banner p{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding-top: 0;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+.intro{
+    text-align: center;
+    background-color: white;
+}
+
+.intro h2{
+    font-size: 1.5em; 
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 20px;
+    margin-top: 21px;
+    color: #00945E;
+    font-family: 'Lato', sans-serif;
+}
+
+.intro p{
+    font-size: 18px;
+    color: black;
+    padding-right: 30px;
+    padding-left: 13px;
+    padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (max-width: 750px){
+.logo{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.logo1{
+    width: 70px;
+}
+.logo2{
+    width: 130px;
+}
+header{
+    position: relative;
+}
+header ul{
+    width: 100%;
+    background: #ebf1ef;
+    max-height: 0px;
+    overflow: hidden;
+}
+.showing{
+    max-height: 100em;
+}
+header ul li{
+    width: 100%;
+}
+header ul li ul{
+    position: static;
+    /* display: block; */
+    width: 100%;
+}
+header ul li ul li a{
+    text-align: left;
+    padding-left: 50px;
+}
+header .menu-toggle{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+}
