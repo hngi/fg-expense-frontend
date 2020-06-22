@@ -132,3 +132,10 @@ span{
 .head-names{
     font-weight: 600;
 }
+header {
+    height: 60px;
+    font-family: 'Lato', sans-serif;
+    animation: Slide_left 1.1s ease-in;
+    background-color: white;
+    margin-bottom: 1%;
+}
