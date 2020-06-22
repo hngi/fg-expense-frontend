@@ -216,12 +216,12 @@ flex-basis: 35rem;
   justify-content: space-between;
 }
 
-.btns{
+.share-close-buttons{
   display: flex;
   justify-content: space-between;
 }
 
-.btn{
+.share-close-button{
   background-color: #00945E;
   padding: 0.5rem;
   border-radius: 0.25rem;
@@ -234,14 +234,14 @@ flex-basis: 35rem;
 margin-bottom: 0.5rem;
 }
 
-.btn a{
+.share-close-button a{
   color: #ffffff;
 font-size: .8rem;
 text-decoration: none !important;
 color: #ffffff !important;
 }
 
-.btn img{
+.share-close-button img{
   margin-left: 0.2rem;
   height: 0.7rem;
 }
@@ -364,6 +364,139 @@ height: 38px;
 border: 1px solid #4acea0;
 font-size: 19px;
 }
+
+
+/* Comment Section */
+
+.comment-container p{
+	margin: 0;
+}
+
+.comment-container{
+	background-color: rgba(0, 148, 94, 0.28);
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	font-size: .8rem;
+	padding: 3rem 0 0;
+}
+
+.comment-wrapper{
+	max-width: 70%;
+	background-color: #ffffff;
+	border: 1px solid #00945E;
+	margin-bottom: 1.5rem;
+	display: flex;
+	padding: 1rem 1rem 1rem 0;
+	border-radius: 0.25rem;
+}
+
+.comment-image{
+	height: 100%;
+	padding: 0.5rem;
+}
+
+.name-time-options{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+.name-time,
+.comment-reactions,
+.comment-like,
+.comment-dislike,
+.comment-reply{
+	display: flex;
+}
+
+.comment-like,
+.comment-dislike,
+.comment-reply{
+	margin-right: 1rem;
+}
+
+.like-image,
+.dislike-image,
+.reply-image{
+	margin-right: 0.2rem;
+}
+
+.name-time p{
+	margin-right: 1rem;
+}
+
+.comment-write-up{
+	margin-bottom: 0.5rem;
+}
+
+.comment-name{
+	color: #005938;
+}
+
+.active{
+	color: #005D3B;
+}
+
+.section-edit-delete{
+	display: none;
+	width: 100%;
+	align-items: right;
+	justify-content: flex-end;
+	z-index: 10;
+	right: 0;
+	top: 0;
+}
+.section-edit-delete.show{
+	display: flex;
+}
+
+.edit-delete{
+	background-color: #ffffff;
+	border: 1px solid #005D3B;
+	padding: 0.5rem 2.5rem;
+	text-align: center;
+	position: relative;
+	top: -95px;
+	right: 5px;
+}
+
+.edit,
+.delete{
+	padding: 0.2rem;
+	font-size: .9rem;
+}
+
+.reply{
+	flex-direction: column;
+}
+.reply-container,
+.reply-wrapper{
+	display: flex;
+}
+
+.reply-wrapper{
+	margin: 1rem 0 0 4rem;
+}
+
+.comment-input{
+	width: 60%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.comment-input input{
+	border: none;
+}
+
+.comment-input input::placeholder{
+	color: #BCBDC1;
+	font-size: 0.8rem;
+}
+
 
 
 /*----------------RESPONSIVENESS---------------*/
@@ -546,10 +679,6 @@ font-size: 19px;
     .ministry-info{
         flex-direction: column;
     }
-
-    .section-wrapper{
-		background-color: #ffffff;
-    }
 }
 
 @media all and (max-width: 900px){
@@ -606,15 +735,15 @@ font-size: 19px;
         font-size: 1.2rem;
     }
 
-    .btn{
+    .share-close-button{
         padding: 0.7rem;
     }
 
-    .btn a{
+    .share-close-button a{
         font-size: 1rem;
     }
 
-    .btn img{
+    .share-close-button img{
         height: 0.8rem;
     }
 }
@@ -637,15 +766,15 @@ font-size: 19px;
         font-size: 1.7rem;
     }
 
-    .btn{
+    .share-close-button{
         padding: 1rem;
     }
 
-    .btn a{
+    .share-close-button a{
         font-size: 1.3rem;
     }
 
-    .btn img{
+    .share-close-button img{
         height: 1rem;
     }
 }
