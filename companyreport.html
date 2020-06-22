@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/companyreport.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -303,18 +303,21 @@
 
 
     <!-------------------------- BODY COMMENTS--------------------------->
-
     <div class="comments">
       <div class="comment">
-          <img src="img/Rectangle 320.png" class="pic"></img>
+          <img src="./img/Rectangle 320.png" class="pic"></img>
           <div class="right">
-              <div class="topright"><span>James Emmanuel</span><span>2h ago</span> <svg width="26" height="6" viewBox="0 0 26 6"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="3.66244" cy="3.10682" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-                      <ellipse cx="13.1195" cy="3.10676" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-                      <ellipse cx="22.5765" cy="3.10676" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-                  </svg>
-              </div>
+                  <div class="topright"><span>James Emmanuel</span><span>2h ago</span>
+                      <span class="dropdown" style=" float:right">
+                          <a class="btn btn-light " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="./img/ellipsis-h-solid.svg"></img>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Delete</a>
+                          </div>
+                      </span>
+                  </div>
               <div class="middle">This is nice to read, I can see the improvement in this sector this is really
                   encouraging</div>
               <div class="react">
@@ -342,19 +345,19 @@
       <!-- jquery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       </div>
-      <div class="comment" style="padding-bottom: 25px;">
-          <img src="img/Rectangle 320.png" class="pic"></img>
-          <div class="flap">
-              <div>Edit</div>
-              <div>Delete</div>
-          </div>
+      <div class="comment" style="padding-bottom:25px;">
+          <img src="./img/Rectangle 320.png" class="pic"></img>
           <div class="right">
-              <div class="topright"><span>James Emmanuel</span><span>2h ago</span> <svg width="26" height="6" viewBox="0 0 26 6"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="3.66244" cy="3.10682" rx="2.70199" ry="2.70051" fill="#005D3B" />
-                      <ellipse cx="13.1195" cy="3.10676" rx="2.70199" ry="2.70051" fill="#005D3B" />
-                      <ellipse cx="22.5765" cy="3.10676" rx="2.70199" ry="2.70051" fill="#005D3B" />
-                  </svg>
+              <div class="topright"><span>James Emmanuel</span><span>2h ago</span>
+                  <span class="dropdown" style="float:right">
+                      <a class="btn btn-light " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="./img/ellipsis-h-solid.svg"></img>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                  </span>
               </div>
               <div class="middle">This is nice to read, I can see the improvement in this sector this is really
                   encouraging</div>
@@ -365,33 +368,37 @@
                           stroke="black" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <span>23</span>
-  
+
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M10.9874 1.47974H12.791C13.1733 1.47298 13.5448 1.60675 13.8349 1.85566C14.1251 2.10457 14.3136 2.45128 14.3649 2.82999V7.55588C14.3136 7.93459 14.1251 8.2813 13.8349 8.53021C13.5448 8.77912 13.1733 8.91289 12.791 8.90613H10.9874M6.25894 10.2564V12.9569C6.25894 13.4941 6.47244 14.0092 6.85248 14.3891C7.23252 14.7689 7.74797 14.9823 8.28543 14.9823L10.9874 8.90613V1.47974H3.36781C3.042 1.47605 2.72584 1.59018 2.47757 1.80109C2.22931 2.012 2.06567 2.30548 2.01682 2.62745L1.08463 8.70359C1.05525 8.89712 1.0683 9.09471 1.12291 9.28268C1.17751 9.47066 1.27235 9.64452 1.40086 9.79223C1.52937 9.93993 1.68847 10.0579 1.86715 10.1381C2.04582 10.2182 2.2398 10.2586 2.43563 10.2564H6.25894Z"
                           stroke="black" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <span>0</span>
-  
+
                   <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M13.2605 7.21931C13.2628 8.11039 13.0545 8.98941 12.6526 9.78479C12.1759 10.7379 11.4432 11.5396 10.5365 12.1C9.62981 12.6604 8.58488 12.9575 7.51878 12.9579C6.62721 12.9602 5.74771 12.752 4.95189 12.3503L1.10156 13.633L2.38501 9.78479C1.98304 8.98941 1.77473 8.11039 1.77706 7.21931C1.77747 6.1538 2.07469 5.10944 2.63543 4.20321C3.19616 3.29699 3.99826 2.56469 4.95189 2.08835C5.74771 1.6866 6.62721 1.47841 7.51878 1.48073H7.85653C9.2645 1.55837 10.5943 2.15232 11.5914 3.14888C12.5885 4.14543 13.1828 5.47455 13.2605 6.88175V7.21931Z"
                           stroke="black" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <span>Reply</span>
-  
+
               </div>
           </div>
       </div>
       <div class="comment">
-          <img src="img/Rectangle 320.png" class="pic"></img>
+          <img src="./img/Rectangle 320.png" class="pic"></img>
           <div class="right">
-              <div class="topright"><span>James Emmanuel</span><span>2h ago</span> <svg width="26" height="6" viewBox="0 0 26 6"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="3.66244" cy="3.10682" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-                      <ellipse cx="13.1195" cy="3.10676" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-                      <ellipse cx="22.5765" cy="3.10676" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-                  </svg>
+              <div class="topright"><span>James Emmanuel</span><span>2h ago</span>
+                      <span class="dropdown" style=" margin-left:auto;float:right">
+                          <a class="btn btn-light " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="./img/ellipsis-h-solid.svg"></img>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Delete</a>
+                          </div>
+                      </span>
               </div>
               <div class="middle">This is nice to read, I can see the improvement in this sector this is really
                   encouraging</div>
@@ -402,7 +409,7 @@
                           stroke="black" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <span>23</span>
-  
+
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                           d="M10.9874 1.47974H12.791C13.1733 1.47298 13.5448 1.60675 13.8349 1.85566C14.1251 2.10457 14.3136 2.45128 14.3649 2.82999V7.55588C14.3136 7.93459 14.1251 8.2813 13.8349 8.53021C13.5448 8.77912 13.1733 8.91289 12.791 8.90613H10.9874M6.25894 10.2564V12.9569C6.25894 13.4941 6.47244 14.0092 6.85248 14.3891C7.23252 14.7689 7.74797 14.9823 8.28543 14.9823L10.9874 8.90613V1.47974H3.36781C3.042 1.47605 2.72584 1.59018 2.47757 1.80109C2.22931 2.012 2.06567 2.30548 2.01682 2.62745L1.08463 8.70359C1.05525 8.89712 1.0683 9.09471 1.12291 9.28268C1.17751 9.47066 1.27235 9.64452 1.40086 9.79223C1.52937 9.93993 1.68847 10.0579 1.86715 10.1381C2.04582 10.2182 2.2398 10.2586 2.43563 10.2564H6.25894Z"
@@ -415,17 +422,35 @@
                           stroke="black" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <span>Reply</span>
-  
+
               </div>
-              <div class="subcomment">
-          <img src="img/Rectangle 321.png" class="pic"></img>
+      <div class="subcomment">
+          <div><img src="./img/Rectangle 321.png" class="pic"></img></div>
           <div class="right">
-              <div class="topright"><span>Nnamdi Benson</span><span>2h ago</span> <svg width="26" height="6" viewBox="0 0 26 6"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <ellipse cx="3.66244" cy="3.10682" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-                  <ellipse cx="13.1195" cy="3.10676" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-                  <ellipse cx="22.5765" cy="3.10676" rx="2.70199" ry="2.70051" fill="#D6D9DF" />
-              </svg>
+              <div class="topright"><span>Nnamdi Benson</span><span>2h ago</span>
+                      <span class="dropdown" style=" margin-left:auto;float:right">
+                          <a class="btn btn-light " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="./img/ellipsis-h-solid.svg"></img>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Delete</a>
+                          </div>
+                      </span>
+              
+          <!-- <img src="./img/Rectangle 321.png" class="pic"></img>
+          <div class="right">
+              <div class="topright"><span>Nnamdi Benson</span><span>2h ago</span>
+                  <span class="dropdown" style=" float:right;">
+                      <a class="btn btn-light " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="./img/ellipsis-h-solid.svg"></img>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Edit</a>
+                          <a class="dropdown-item" href="#">Delete</a>
+                      </div>
+                  </span> -->
+
           </div>
           <div class="middle">Yes totally agree</div>
           <div class="react">
@@ -447,10 +472,10 @@
                       stroke="black" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
               <span>Reply</span>
-  
+
           </div>
           </div>
-  
+
               </div>
           </div>
       </div>
@@ -461,16 +486,16 @@
               <path d="M7.09424 12.1168C7.09424 12.1168 8.34467 13.7928 10.4287 13.7928C12.5128 13.7928 13.7632 12.1168 13.7632 12.1168" stroke="#BCBDC1" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M7.92822 7.92676H7.93782" stroke="#BCBDC1" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M12.9297 7.92676H12.9393" stroke="#BCBDC1" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+          </svg>
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.1714 2.89868H4.50073C3.57994 2.89868 2.8335 3.64906 2.8335 4.5747V16.3069C2.8335 17.2325 3.57994 17.9829 4.50073 17.9829H16.1714C17.0922 17.9829 17.8386 17.2325 17.8386 16.3069V4.5747C17.8386 3.64906 17.0922 2.89868 16.1714 2.89868Z" stroke="#BCBDC1" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M7.41846 8.76489C8.10881 8.76489 8.66846 8.2021 8.66846 7.50787C8.66846 6.81364 8.10881 6.25085 7.41846 6.25085C6.7281 6.25085 6.16846 6.81364 6.16846 7.50787C6.16846 8.2021 6.7281 8.76489 7.41846 8.76489Z" stroke="#BCBDC1" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M17.8394 12.9548L13.6713 8.76477L4.50146 17.9829" stroke="#BCBDC1" stroke-width="1.35139" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-  
+              </svg>
+
       </div>
   </div>
-
+    
 
   <!------- footer-- --------->
 
@@ -527,5 +552,11 @@
 <!-- custom script -->
   <script src="js/companyreport.js"></script>
   <script src="./js/ExpenditureScript.js"></script>
+   <!-- custom script -->
+   <script src="js/main.js"></script>
+   <script src="./js/ExpenditureScript.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
