@@ -52,6 +52,7 @@
     background: rgba(31, 36, 48, 0.8);
     color: white;
     margin: 4rem;
+    margin-bottom: 20px;
     padding-bottom: 2rem;
   }
   .container{
@@ -105,8 +106,11 @@ span{
   }
 
   .ministry{
+    display: inline-block;
    text-decoration: none;
    margin: 4rem;
+   margin-top: 20px;
+   margin-bottom: 20px;
     padding: 5px 8px;
    color: black;
   }
@@ -138,12 +142,12 @@ span{
      }
   }
 
-    @media (max-width: 500px) { 
+    @media (max-width: 550px) { 
      .second {
        width: 90%; 
        margin: auto;
-       margin-top: 4rem;
-       margin-bottom: 4rem;
+       margin-top: 20px;
+       margin-bottom: 20px;
      }
 
      .first {
@@ -153,10 +157,11 @@ span{
        padding-bottom: 50px;
      }
 
-      a {
+      .ministry {
        display: inline-block;
        width: 100%;
        margin: 0;
+         margin-bottom: 20px;
        text-align: center;
        padding: 5px 8px;
      }
