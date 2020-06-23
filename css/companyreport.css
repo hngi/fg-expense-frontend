@@ -369,10 +369,20 @@ header .menu-toggle{
 	color: #00945e;
 	margin: auto 0;
 	padding: 0px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 34px;
 }
 .table-top > h5 {
 	padding: 10px 25px;
 	text-align: right;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 24px;
 }
 
 .table-top button {
@@ -401,6 +411,11 @@ th,td {
 	text-align: left;
 	padding: 14px;
 	font-size: 0.9rem;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
 }
 
 th {
@@ -410,6 +425,11 @@ th {
 	font-weight: 600;
 	border-top: 1px solid rgba(0, 0, 0, 0.5);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
 }
 
 tr > :nth-child(1) {
@@ -437,6 +457,11 @@ tr:nth-child(even) {
 .table-footer > span {
 	margin: auto 0;
 	color: #191e29;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 17px;
+}
 }
 
 .pagination {
@@ -449,6 +474,10 @@ tr:nth-child(even) {
 	padding: 8px 16px;
 	text-decoration: none;
 	border: 1px solid #ddd;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
 }
 
 .pagination a.active {
