@@ -69,6 +69,11 @@ button {
   line-height: 19px;
 }
 
+.sub-nav div a{
+  text-decoration: none;
+  color: black;
+}
+
 .table-section {
   padding: 8px;
 }

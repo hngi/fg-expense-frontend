@@ -1058,11 +1058,9 @@ tr:nth-child(even) {
         margin-top: -60px;
     }
    
-
-   
 }
 
-@media (max-width: 330px) {
+@media (max-width: 330px){
     .card-title {
         font-size: 12px;
     }
@@ -1071,4 +1069,3 @@ tr:nth-child(even) {
     }
    
 }
-
