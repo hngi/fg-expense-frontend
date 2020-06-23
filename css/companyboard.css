@@ -1,0 +1,26 @@
+.directors {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .directors svg {
+    cursor: pointer;
+  }
+  .directors img {
+    max-width: 200px;
+  }
+  .directors .sub {
+    color: #005d3b;
+  }
+  .directors .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    min-width: 200px;
+  }
