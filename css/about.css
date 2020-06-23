@@ -9,7 +9,77 @@
     margin: 0;  
     padding: 0;
   }
-  
+  header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo{
+    justify-content: flex-start;
+    height: inherit;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+.logo2{
+    margin-left: -1em;
+    width: 150px;
+}
+header ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header ul li{
+    position: relative;
+    margin-top: 6px;
+}
+header ul li ul{
+    position: absolute;
+    top: 40px;
+    right: 6px;
+    display: none;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a{
+    padding: 10px;
+    background: #ebf1ef;
+    text-align: center;
+}
+header ul li ul li a:hover{
+    background-color:  #00945E;
+    text-decoration: none;
+    color: white;
+}
+header ul li a{
+    display: block;
+    padding: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+
+}
+header ul li a:hover{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+header .menu-toggle{
+    display: none;
+}
+.active{
+    font-weight: bold;
+    color: black;
+}
   .main-section h1 {
     margin: 0;
     padding: 0.6rem;
@@ -20,7 +90,7 @@
   .first {
     width: 100%;
     height: 260px;
-    background: url("../img/photo-1569706971306-de5d78f6418e\ \(2\).jpg");
+    background: url("../img/Header.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -46,41 +116,49 @@
     font-size: 18px;
     line-height: 22px;
   }
+
+  .second{
+    padding: 25px;
+    margin: 15px;
+  }
   
   .second h3{
     color:#00945E;
-    font-style: normal;
     font-weight: bold;
     font-size: 35px;
-    line-height: 42px;
+    line-height: 5px;
     text-align: center;
   }
   .second p{
-  font-style: normal;
-  font-weight: normal;
+    padding-top: 15px;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 10px;
   text-align: center;
-  color: #353A45;
+  color: hsl(221, 13%, 24%);
+  } 
+  #mission-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  #mission-description > p {
+  #mission-description  p {
     font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 24px;
     color: #353a45;
   }
-  #mission-description > h4 {
+  #mission-description  h4 {
     font-family: Lato;
-    font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    line-height: 30px;
     text-align: center;
     color: #00945e;
   }
-  @media (min-width: 400px) {
+  /* @media (min-width: 400px) {
     #mission-container {
       display: block;
       width: 100%;
@@ -129,7 +207,15 @@
       margin-top: 40px;
       padding: 30px;
     }
-  } 
+  }  */
+  #vision-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 #vision-description > p {
   font-family: Lato;
   font-style: normal;
@@ -147,7 +233,7 @@
   text-align: center;
   color: #00945e;
 }
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
   #vision-container {
     display: block;
     width: 100%;
@@ -214,6 +300,42 @@
     padding-top: 30px;
     top: 1070px;
   }
-}
+} */
 
- 
+footer{
+  background:#323E48;
+  color: #fff;
+  padding: 20px 0px 70px 0px;
+}
+footer ul{
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+footer .heading{
+  font-weight: 600;
+}
+footer ul li{
+  font-size: 14px;
+}
+.footer-btm{
+  background: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+footer a, .footer-btm a{
+  color:#fff;
+  font-size: 14px;
+}
+footer a:hover, .footer-btm a:hover{
+  color: #ebf1ef;
+  text-decoration: none;
+  font-size: 14px;
+}
+.copyright{
+  text-align-last: right;
+
+}div .twitter{
+  display: flex;
+}
