@@ -2,19 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto;
-  font-style: normal;
+  /* font-family: Roboto;
+  font-style: normal; */
 }
 
-.reponsive-div {
-  width: 80%;
-  margin: 0 auto;
+header {
+  margin-bottom: 5px;
 }
+
+.banner h3 {
+  width: 95%;
+  margin: 0 auto;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+}
+
 .banner{
 	background: #00945e;
   padding: 20px 10px;
   color: white;
 }
+
 .logo-banner{
 	padding: 10px;
   background-image: url('../img/construction.png');
@@ -24,6 +34,7 @@
   color: black;
   position: relative;
   height: 1300px;
+  z-index: -1;
 }
 .logo-banner img{
 	width: 30%;
@@ -162,6 +173,17 @@ line-height: 30px;
 .fa:hover {
   opacity: 0.7;
 }
-        
-      
-        
+
+.twitter {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 750px){
+header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+}
