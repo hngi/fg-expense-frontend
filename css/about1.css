@@ -1,4 +1,4 @@
-@keyframes Slide_right{
+/* @keyframes Slide_right{
     0%{
         transform: translateX(-400px);
     }
@@ -7,7 +7,7 @@
     }
 }
 @keyframes Slide_left{
-    0%{
+    0%{ 
         transform: translateX(400px);
     }
     100%{
@@ -84,7 +84,7 @@ header .menu-toggle{
 .active{
     font-weight: bold;
     color: black;
-}
+} */
 
 .banner-section{
     width: 100%;
@@ -95,29 +95,29 @@ header .menu-toggle{
     height: 40px;
     color: #fff;
     text-align: left;
-    padding-left: 50px;
-    padding-top: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
     margin-top: 10px;
     font-size: 1em;
     font-weight: 900;
     font-family: 'Lato', sans-serif;
-
+    
 }
 
 .banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.623) ), url(./img/Top\ Picture\ Header.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.623) ), url(../imge/Top\ Picture\ Header.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* width: 100%; */
     margin-top: -21px;
-    height: 450px;
+    height: 300px;
 }
 .banner h1{
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    padding-top: 150px;
+    padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 21px;
@@ -158,6 +158,101 @@ header .menu-toggle{
     padding-bottom: 50px;
     font-family: 'Lato', sans-serif;
 }
+
+@media only screen and (max-width: 800px){  
+
+    .intro h2{
+        font-size: 20px;
+    }
+    
+    .intro p{
+        font-size: 14px;
+    } 
+
+    #text_and_image_close h3{
+        font-size: 17px;
+    }
+
+    #text_and_image_close p{
+        font-size: 13px;
+    }
+
+    
+    #text_close_to_image h3{
+        font-size: 17px;
+    }
+
+    #text_close_to_image p{
+        font-size: 13px;
+    }
+    } 
+
+    @media only screen and (max-width: 400px){  
+
+        .intro h2{
+            font-size: 15px;
+        }
+        
+        .intro p{
+            font-size: 12px;
+        } 
+    
+        #text_and_image_close h3{
+            font-size: 15px;
+        }
+    
+        #text_and_image_close p{
+            font-size: 11px;
+        }
+    
+        
+        #text_close_to_image h3{
+            font-size: 15px;
+        }
+    
+        #text_close_to_image p{
+            font-size: 11px;
+        }
+        } 
+
+@media only screen and (min-width: 1024px){
+    .active{
+        font-weight: bold;
+    }
+    .home-banner{
+        /* width: 100%; */
+        margin-top: 10px;
+        height: 50px;
+        padding-top: 10px;
+        padding-left: 55px;
+        font-weight: bold;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .banner{
+        margin-top: -45px;
+        height: 503px;
+        width: 100%;
+    }
+    .banner h1{
+        padding-top: 140px;
+       /* padding-top: 70px; */
+       font-size: 56px;
+        line-height: 74px;
+       font-weight: bolder;
+       margin-left: 30px;
+        margin-top: 45px;
+    }
+    .banner p{
+        /* width: 57%; */
+        /* padding-left: 50px; */
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        padding-top: 10px;
+    }
+
 @media only screen and (max-width: 960px){
 header .menu-toggle {
     display: block !important;
@@ -213,6 +308,8 @@ header .menu-toggle{
     top: 10px;
 }
 }
+
+
 .flex{
     display: flex;
     flex-direction: row;
@@ -268,12 +365,15 @@ header .menu-toggle{
 #vision{
   color: #00945E;
 }
+
+
 /* footer section */
-footer{
+
+/* footer{
     background:#323E48;
     color: #fff;
     padding: 20px 0px 70px 0px;
-}
+} */
 footer ul{
     list-style-type: none;
     padding: 0;
@@ -302,15 +402,10 @@ footer a:hover, .footer-btm a:hover{
 }
 .copyright{
     text-align-last: right;
-
-}div .twitter{
-    display: flex;
 }
 
-
-
  /* Done and modified by Abdulmatin */
-@media only screen and (max-width: 960px){
+/* @media only screen and (max-width: 960px){
 
     .flex{
         flex-direction: column;
@@ -323,10 +418,10 @@ footer a:hover, .footer-btm a:hover{
 
 
     #text_and_image_close{
-        padding-left: 5px;
+        padding-left: 20px;
         padding-right: 10px;
         padding-bottom: 0;
-    }
+    } 
 
     #text_close_to_image{
         padding-top: 0;
@@ -343,60 +438,9 @@ footer a:hover, .footer-btm a:hover{
      .flex img{
          width: max-content;
      }
+} */
+
+
+
+
 }
-
-@media screen and (max-width: 680px){
-    .flex{
-        margin: 0;
-        flex-direction: column;
-    }
-    #mission, #vision{
-        text-align:center;
-    }
-    .first_section{
-        padding-bottom: 20px;
-    }
-
-    #text_and_image_close{
-        padding-left: 5px;
-        padding-right: 10px;
-        padding-bottom: 0;
-    }
-
-    #text_close_to_image{
-        padding:0;
-    }
-    #image_close_to_text{
-        padding: 0; 
-    }
-    #image_and_text_close{
-        display: flex;
-        justify-content: center;
-        padding: 0;
-     }
-     .flex img{
-         width: 80%;
-         margin: auto;
-    display: flex;
-
-     }
-     
-    div.twitter{
-        margin-top: 0px !important;
-        padding: 10px;
-        width: 50px;
-        height: 50px;
-        flex-direction: row;
-    }
-    .footer-btm{
-        background: black;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 14px;
-        text-align: center;
-    }
-    .copyright{
-        text-align-last: center;
-    }
-}
-
